@@ -33,17 +33,22 @@ export default function About() {
       </nav>
 
       {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background opacity-50" />
+      <section className="relative py-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/hero-about.jpg)' }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+        </div>
         <div className="container relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl text-center mx-auto">
             <span className="text-accent text-sm font-semibold tracking-wider uppercase">
               About Us
             </span>
-            <h1 className="text-5xl lg:text-6xl font-bold mt-4 mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold mt-4 mb-6 text-white hero-title">
               Built on Passion, Driven by Excellence
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white/90">
               Located 1.5 miles north of Ennis, Montana, Headwaters Customs is where classic automotive 
               craftsmanship meets cutting-edge technology.
             </p>

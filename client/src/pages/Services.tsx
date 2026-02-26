@@ -111,17 +111,22 @@ export default function Services() {
       </nav>
 
       {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background opacity-50" />
+      <section className="relative py-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/hero-services.jpg)' }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+        </div>
         <div className="container relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl text-center mx-auto">
             <span className="text-accent text-sm font-semibold tracking-wider uppercase">
               Our Services
             </span>
-            <h1 className="text-5xl lg:text-6xl font-bold mt-4 mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold mt-4 mb-6 text-white hero-title">
               Full-Service Custom Shop
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white/90">
               From sandblasting to final assembly, we handle every aspect of your build in-house. 
               Our 8,000 sq ft facility houses dedicated paint and fabrication departments staffed by 
               experienced technicians who are passionate about automotive excellence.

@@ -109,18 +109,23 @@ export default function DreamBuild() {
       </nav>
 
       {/* Hero */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background opacity-50" />
+      <section className="relative py-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/hero-dreambuild.jpg)' }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+        </div>
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/20 backdrop-blur-sm rounded-full mb-6">
               <Sparkles className="w-5 h-5 text-accent" />
               <span className="text-accent text-sm font-semibold">AI-Powered Visualization</span>
             </div>
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-white hero-title">
               Dream It. See It. Build It.
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white/90">
               Describe your dream vehicle build in plain English and watch AI generate photorealistic 
               renderings in seconds. No design skills required—just your vision.
             </p>

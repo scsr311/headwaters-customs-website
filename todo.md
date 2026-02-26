@@ -1,55 +1,66 @@
 # Headwaters Customs Website - TODO
 
-## Phase 1: Core Platform & AI Features
+## COMPLETE REDESIGN - High-End Authentic Aesthetic
 
-### Design & Branding
-- [x] Choose color palette and typography that reflects "alpha yet confident" brand voice
-- [x] Design asymmetric hero layout with high-impact vehicle imagery
-- [x] Implement mobile-responsive design optimized for all devices
-- [x] Configure global theming in index.css
+### Critical Design Changes
+- [ ] Remove all fake/placeholder stats (200+ builds, 15+ years, etc.) - use only real information
+- [ ] Replace amateur layout with clean, professional high-end design
+- [ ] Implement Montana landscape hero image (Madison Valley/River with mountains)
+- [ ] Extract and use actual Headwaters Customs logo from reference image
+- [ ] Change color scheme to white primary text with golden/yellow accents
+- [ ] Replace generic fonts with bold, impactful typography
+- [ ] Center logo with company name and slogan: "Artistry forged through steel, built to outlast the ordinary"
 
-### Core Pages
-- [x] Homepage with hero section and clear CTAs
-- [x] Services page outlining all offerings (sandblasting, powder coating, LS swaps, frame-off restorations, custom fabrication)
-- [x] About page with Headwaters Customs story and team introductions
-- [x] Contact page with form, location map, phone, and business hours
+### Navigation Structure
+- [ ] Rebuild top navigation with clean dropdown menus
+- [ ] About
+- [ ] Services (dropdown: Services Offered, Our Process)
+- [ ] AI Tools (dropdown: Dream Build, Cost Calculator)
+- [ ] Gallery
+- [ ] Customer Portal
+- [ ] Classic Car Marketplace
+- [ ] Store
+- [ ] Follow Our Builds
+- [ ] Contact
+- [ ] Partners/Affiliates
 
-### AI Dream Build Feature
-- [x] Create database schema for dream build requests and generated images
-- [x] Build frontend UI for text prompt input with example prompts
-- [x] Implement OpenAI DALL-E integration on backend
-- [x] Add rate limiting (6-8 free renders per session, IP-based throttling)
-- [x] Implement email capture gateway for additional renders
-- [x] Create image gallery display for generated renders
-- [x] Add "Make It Real: Get a Quote" CTA on generated images
-- [x] Set up cost controls and billing alerts
+### Homepage Redesign
+- [ ] Full-screen Montana landscape hero with centered logo and slogan
+- [ ] Clean white navigation bar that stands out against landscape
+- [ ] Remove all fake statistics and placeholder content
+- [ ] Authentic, confident copy that reflects actual business
+- [ ] High-end aesthetic throughout
 
-### AI-Assisted Quote Request
-- [x] Create database schema for quote requests
-- [x] Build frontend UI for photo upload (5-10 images)
-- [x] Create modification checklist UI
-- [x] Implement AI image analysis using OpenAI Vision API
-- [x] Generate structured summary report (no pricing)
-- [ ] Set up email delivery to customer and shop
-- [x] Add form validation and error handling
+### All Pages Redesign
+- [ ] Apply new white/golden color scheme across all pages
+- [ ] Update typography to bold, professional fonts
+- [ ] Maintain consistent high-end aesthetic
+- [ ] Remove any generic template elements
+- [ ] Ensure authentic, truthful content only
 
-### Finished Project Gallery
-- [ ] Create database schema for projects (title, description, modifications, images)
-- [ ] Build gallery grid view with filtering
-- [ ] Create individual project detail pages
-- [ ] Implement image upload and management
-- [ ] Add admin interface for adding/editing projects
+### AI Features (Keep Functionality, Update Design)
+- [ ] Redesign AI Dream Build page with new aesthetic
+- [ ] Redesign Quote Request page with new aesthetic
+- [ ] Maintain all backend functionality
 
-### Technical Infrastructure
-- [x] Set up OpenAI API integration and secrets management
-- [ ] Implement S3 storage for uploaded images and generated renders
-- [x] Configure rate limiting middleware
-- [ ] Set up email service integration
-- [ ] Implement SEO optimization (meta tags, structured data, sitemap)
-- [ ] Add Google Maps integration for contact page
-- [x] Write comprehensive vitest tests for all features
+### Assets Needed
+- [ ] Montana landscape hero image (Madison Valley/River)
+- [ ] Extract logo from reference image
+- [ ] Find/create high-quality project photos for gallery
 
-### Deployment & Polish
-- [ ] Final testing across all devices and browsers
-- [ ] Performance optimization
-- [ ] Create initial checkpoint for deployment
+### Bug Fixes
+- [ ] Fix nested anchor tags in navigation (Link wrapping <a> tags)
+
+## Hero Image Implementation
+- [ ] Copy car lot sunset image to public directory (homepage)
+- [ ] Copy illustrated truck image to public directory (gallery)
+- [ ] Copy golden hour valley shot to public directory (about)
+- [ ] Copy river with mountains to public directory (services)
+- [ ] Copy dramatic sunset to public directory (dream build)
+- [ ] Copy clean daytime river to public directory (quote request)
+- [ ] Update Homepage with car lot sunset hero
+- [ ] Update Gallery page with illustrated truck hero
+- [ ] Update About page with golden hour valley hero
+- [ ] Update Services page with river/mountains hero
+- [ ] Update Dream Build page with dramatic sunset hero
+- [ ] Update Quote Request page with daytime river hero
