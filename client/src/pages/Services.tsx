@@ -4,6 +4,7 @@ import {
   Wrench, Paintbrush, Cog, Hammer, Zap, Package 
 } from "lucide-react";
 import { Link } from "wouter";
+import Navigation from "@/components/Navigation";
 
 const services = [
   {
@@ -83,32 +84,7 @@ const services = [
 export default function Services() {
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      {/* Navigation */}
-      <nav className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <a className="text-2xl font-bold text-foreground hover:text-accent transition-colors">
-                HEADWATERS CUSTOMS
-              </a>
-            </Link>
-            <div className="hidden md:flex items-center gap-6">
-              <Link href="/services">
-                <a className="text-accent font-medium">Services</a>
-              </Link>
-              <Link href="/gallery">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">Gallery</a>
-              </Link>
-              <Link href="/about">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">About</a>
-              </Link>
-              <Link href="/contact">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero */}
       <section className="relative py-32 overflow-hidden">

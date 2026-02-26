@@ -64,3 +64,34 @@
 - [ ] Update Services page with river/mountains hero
 - [ ] Update Dream Build page with dramatic sunset hero
 - [ ] Update Quote Request page with daytime river hero
+
+## Design Improvements - Phase 2
+
+### Typography Enhancement
+- [x] Replace generic system fonts with premium custom fonts (Google Fonts)
+- [x] Choose bold, impactful font for headings (Rajdhani)
+- [x] Select clean, professional font for body text (Barlow)
+- [x] Update global CSS with new font families
+- [x] Add special Bruno Ace SC font for hero titles
+
+### Logo Redesign & Placement
+- [x] Design new Headwaters Customs logo with golden styling
+- [x] Create logo with proper automotive/custom shop aesthetic
+- [x] Implement logo in navigation (better placement and sizing)
+- [x] Add company slogan integration with logo
+- [x] Ensure logo works on both light and dark backgrounds
+
+### Navigation Menu Restructure
+- [x] Build dropdown menu system for organized navigation
+- [x] Services dropdown (Services Offered, Our Process)
+- [x] AI Tools dropdown (Dream Build, Cost Calculator/Quote Request)
+- [x] Implement proper menu styling with hover states
+- [x] Create reusable Navigation component
+- [x] Add smooth transitions and animations
+
+### Additional Hero Backgrounds
+- [x] Add hero background to Contact page
+- [x] Verify all pages have hero backgrounds
+- [x] Ensure all hero images are optimized for web
+- [x] Verify consistent hero styling across all pages
+- [x] Apply Navigation component to all pages for consistency

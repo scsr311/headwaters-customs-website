@@ -17,9 +17,11 @@ export default function Home() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <Link href="/">
-              <span className="text-xl font-bold text-white hover:text-accent transition-colors cursor-pointer nav-link">
-                HEADWATERS CUSTOMS
-              </span>
+              <img 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/GOLdLLbaEEdpdWGF.png" 
+                alt="Headwaters Customs" 
+                className="h-12 w-auto cursor-pointer hover:opacity-90 transition-opacity"
+              />
             </Link>
             <div className="hidden lg:flex items-center gap-8">
               <Link href="/about">
@@ -114,19 +116,16 @@ export default function Home() {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="/logo.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/GOLdLLbaEEdpdWGF.png" 
               alt="Headwaters Customs Logo" 
-              className="mx-auto w-32 h-auto md:w-40 drop-shadow-2xl"
+              className="mx-auto w-64 h-auto md:w-96 drop-shadow-2xl"
             />
           </div>
 
           {/* Main Heading */}
-          <h1 className="hero-title text-white mb-4">
+          <h1 className="hero-title text-white mb-4 text-4xl md:text-5xl lg:text-6xl">
             STEEL, SOUL, AND THE SPIRIT OF THE MADISON
           </h1>
-          <h2 className="hero-title text-white mb-8">
-            HEADWATERS CUSTOMS
-          </h2>
 
           {/* Slogan */}
           <p className="hero-subtitle text-white mb-4">

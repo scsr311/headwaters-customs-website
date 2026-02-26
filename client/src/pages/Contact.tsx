@@ -7,6 +7,7 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Link } from "wouter";
 import { useState } from "react";
 import { toast } from "sonner";
+import Navigation from "@/components/Navigation";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -31,45 +32,25 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      {/* Navigation */}
-      <nav className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/">
-              <a className="text-2xl font-bold text-foreground hover:text-accent transition-colors">
-                HEADWATERS CUSTOMS
-              </a>
-            </Link>
-            <div className="hidden md:flex items-center gap-6">
-              <Link href="/services">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">Services</a>
-              </Link>
-              <Link href="/gallery">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">Gallery</a>
-              </Link>
-              <Link href="/about">
-                <a className="text-muted-foreground hover:text-foreground transition-colors">About</a>
-              </Link>
-              <Link href="/contact">
-                <a className="text-accent font-medium">Contact</a>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-card to-background opacity-50" />
+      <section className="relative py-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: 'url(/hero-about.jpg)' }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+        </div>
         <div className="container relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl text-center mx-auto">
             <span className="text-accent text-sm font-semibold tracking-wider uppercase">
               Get In Touch
             </span>
-            <h1 className="text-5xl lg:text-6xl font-bold mt-4 mb-6">
+            <h1 className="text-5xl lg:text-6xl font-bold mt-4 mb-6 text-white hero-title">
               Let's Talk About Your Build
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-white/90">
               Have a question about our services? Ready to start your project? We're here to help. 
               Reach out and let's discuss how we can bring your vision to life.
             </p>
