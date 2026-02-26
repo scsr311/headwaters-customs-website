@@ -1,6 +1,9 @@
-import { eq } from "drizzle-orm";
+import { eq, and, gte } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { 
+  InsertUser, users, dreamBuilds, InsertDreamBuild, 
+  quoteRequests, InsertQuoteRequest, rateLimits, InsertRateLimit 
+} from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +92,113 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+// Dream Build Functions
+export async function createDreamBuild(data: InsertDreamBuild) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  const result = await db.insert(dreamBuilds).values(data);
+  return result;
+}
+
+export async function getDreamBuildsBySession(sessionId: string) {
+  const db = await getDb();
+  if (!db) return [];
+  
+  const result = await db.select().from(dreamBuilds)
+    .where(eq(dreamBuilds.sessionId, sessionId));
+  
+  return result;
+}
+
+// Quote Request Functions
+export async function createQuoteRequest(data: InsertQuoteRequest) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  const result = await db.insert(quoteRequests).values(data);
+  return result;
+}
+
+export async function getAllQuoteRequests() {
+  const db = await getDb();
+  if (!db) return [];
+  
+  const result = await db.select().from(quoteRequests);
+  
+  return result;
+}
+
+// Rate Limiting Functions
+export async function checkRateLimit(identifier: string, feature: string, maxRequests: number, windowMinutes: number): Promise<boolean> {
+  const db = await getDb();
+  if (!db) return true; // Allow if DB unavailable
+  
+  const now = new Date();
+  const resetTime = new Date(now.getTime() + windowMinutes * 60 * 1000);
+  
+  // Get existing rate limit record
+  const existing = await db.select().from(rateLimits)
+    .where(and(
+      eq(rateLimits.identifier, identifier),
+      eq(rateLimits.feature, feature)
+    ))
+    .limit(1);
+  
+  if (existing.length === 0) {
+    // Create new rate limit record
+    await db.insert(rateLimits).values({
+      identifier,
+      feature,
+      requestCount: 1,
+      lastRequest: now,
+      resetAt: resetTime,
+    });
+    return true;
+  }
+  
+  const record = existing[0];
+  
+  // Check if we need to reset the window
+  if (record && record.resetAt < now) {
+    await db.update(rateLimits)
+      .set({
+        requestCount: 1,
+        lastRequest: now,
+        resetAt: resetTime,
+      })
+      .where(eq(rateLimits.id, record.id));
+    return true;
+  }
+  
+  // Check if limit exceeded
+  if (record && record.requestCount >= maxRequests) {
+    return false;
+  }
+  
+  // Increment counter
+  if (record) {
+    await db.update(rateLimits)
+      .set({
+        requestCount: record.requestCount + 1,
+        lastRequest: now,
+      })
+      .where(eq(rateLimits.id, record.id));
+  }
+  
+  return true;
+}
+
+export async function getRateLimitStatus(identifier: string, feature: string) {
+  const db = await getDb();
+  if (!db) return null;
+  
+  const result = await db.select().from(rateLimits)
+    .where(and(
+      eq(rateLimits.identifier, identifier),
+      eq(rateLimits.feature, feature)
+    ))
+    .limit(1);
+  
+  return result.length > 0 ? result[0] : null;
+}
