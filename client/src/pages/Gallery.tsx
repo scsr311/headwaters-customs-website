@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -10,7 +11,20 @@ const C20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/3
 const K20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/YfwgnYwNKuLMlHWp.jpg";
 const F450_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/RfTnqLJyCpNNKxFo.jpg";
 
-const builds = [
+interface Build {
+  id: string;
+  year: string;
+  name: string;
+  subtitle: string;
+  color: string;
+  image: string;
+  featured: boolean;
+  specs: { icon: React.ElementType; label: string; value: string }[];
+  description: string;
+  link?: string;
+}
+
+const builds: Build[] = [
   {
     id: "k10",
     year: "1979",
@@ -58,7 +72,8 @@ const builds = [
     image: K20_URL,
     featured: false,
     specs: [],
-    description: "Full build details coming soon.",
+    description: "5.3 LS · 400 HP · 4L80E · Custom Distressed Leather Interior",
+    link: "/builds/k20",
   },
   {
     id: "f450",
@@ -178,7 +193,14 @@ export default function Gallery() {
                 </div>
                 <div className="p-4">
                   <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">{build.color}</p>
-                  <p className="text-foreground/60 text-sm italic">{build.description}</p>
+                  <p className="text-foreground/70 text-sm mb-3">{build.description}</p>
+                  {build.link && (
+                    <Link href={build.link}>
+                      <span className="inline-flex items-center gap-1 text-accent text-xs font-bold uppercase tracking-widest hover:text-accent/80 transition-colors cursor-pointer">
+                        View Full Build <ChevronRight className="w-3 h-3" />
+                      </span>
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}

@@ -127,3 +127,12 @@
 - Turbocharged - estimated 1,200-1,300 hp
 - This is the "hero build" / face of the business
 - Must be featured prominently with full spec callout on homepage
+
+## K20 Build Detail Page - Phase 5
+
+- [x] Upload all 20 K20 photos to CDN
+- [x] Update K20 card in founding fleet with real specs
+- [x] Create dedicated /builds/k20 page with full photo gallery + lightbox
+- [x] Add K20 specs: 5.3 LS, 400hp, 4L80E, custom distressed leather interior, full nut-and-bolt restoration
+- [x] Register /builds/k20 route in App.tsx
+- [x] Link K20 card in gallery/homepage to dedicated build page
