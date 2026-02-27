@@ -132,26 +132,28 @@ export default function Home() {
             Frame-Off Restorations &nbsp;•&nbsp; LS Swaps &nbsp;•&nbsp; Montana Built
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/dream-build">
-              <Button
-                size="lg"
-                className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-6 text-base font-bold tracking-widest uppercase cursor-pointer"
-              >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              size="lg"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-6 text-base font-bold tracking-widest uppercase cursor-pointer"
+              asChild
+            >
+              <Link href="/dream-build">
                 <Sparkles className="w-5 h-5 mr-2" />
                 AI Dream Build
-              </Button>
-            </Link>
-            <Link href="/quote">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white/80 text-white hover:bg-white hover:text-black px-8 py-6 text-base font-bold tracking-widest uppercase cursor-pointer"
-              >
+              </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-white/80 text-white hover:bg-white hover:text-black px-8 py-6 text-base font-bold tracking-widest uppercase cursor-pointer"
+              asChild
+            >
+              <Link href="/quote">
                 <FileText className="w-5 h-5 mr-2" />
                 Get a Quote
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
 
@@ -230,11 +232,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <Link href="/gallery">
-                <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer">
+              <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer" asChild>
+                <Link href="/gallery">
                   View Full Gallery <ChevronRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -302,11 +304,9 @@ export default function Home() {
               <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
                 Describe your vision and watch AI generate photorealistic renderings before we turn a single wrench.
               </p>
-              <Link href="/dream-build">
-                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase text-sm cursor-pointer">
-                  Try It Now
-                </Button>
-              </Link>
+              <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase text-sm cursor-pointer" asChild>
+                <Link href="/dream-build">Try It Now</Link>
+              </Button>
             </div>
 
             <div className="p-8 border border-accent/20 rounded-lg hover:border-accent/60 transition-all bg-card/50 text-center">
@@ -315,11 +315,9 @@ export default function Home() {
               <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
                 Upload photos, select your modifications, and receive a detailed project summary. Custom quote within 48 hours.
               </p>
-              <Link href="/quote">
-                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase text-sm cursor-pointer">
-                  Get Started
-                </Button>
-              </Link>
+              <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase text-sm cursor-pointer" asChild>
+                <Link href="/quote">Get Started</Link>
+              </Button>
             </div>
 
             <div className="p-8 border border-accent/20 rounded-lg hover:border-accent/60 transition-all bg-card/50 text-center">
@@ -328,11 +326,9 @@ export default function Home() {
               <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
                 Sandblasting, powder coating, frame-off restorations, and custom fabrication — all handled in-house.
               </p>
-              <Link href="/services">
-                <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase text-sm cursor-pointer">
-                  View Services
-                </Button>
-              </Link>
+              <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase text-sm cursor-pointer" asChild>
+                <Link href="/services">View Services</Link>
+              </Button>
             </div>
           </div>
         </div>
