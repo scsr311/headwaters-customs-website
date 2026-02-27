@@ -44,13 +44,14 @@ const builds: Build[] = [
   {
     id: "scout",
     year: "1961",
-    name: "International Scout",
-    subtitle: "The Red Menace",
-    color: "Candy Red / White",
+    name: "IH Scout 80",
+    subtitle: "Stephanie's Scout",
+    color: "Candy Red & White Two-Tone",
     image: SCOUT_URL,
     featured: false,
     specs: [],
-    description: "Full build details coming soon.",
+    description: "One of First 500 Built · 5.3 LS 500hp · 4L60E · Dana 44/60 · Half-Cab Conversion",
+    link: "/builds/scout",
   },
   {
     id: "c20",

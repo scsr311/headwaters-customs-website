@@ -44,13 +44,14 @@ const foundingBuilds: FoundingBuild[] = [
   {
     id: "scout",
     year: "1961",
-    name: "International Scout",
-    nickname: "The Red Menace",
-    color: "Candy Red / White",
+    name: "IH Scout 80",
+    nickname: "Stephanie's Scout",
+    color: "Candy Red & White Two-Tone",
     image: SCOUT_URL,
     isFeatured: false,
     specs: [],
-    description: "Full build details coming soon. Stay tuned.",
+    description: "One of First 500 Built · 5.3 LS 500hp · 4L60E · Dana 44/60 · Half-Cab Conversion",
+    link: "/builds/scout",
   },
   {
     id: "c20",

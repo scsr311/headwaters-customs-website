@@ -146,3 +146,13 @@
 - [x] Update F450 card in homepage founding fleet with real specs and link
 - [x] Update F450 card in gallery with real specs and link
 - [x] Register /builds/f450 route in App.tsx
+
+## Scout 80 Build Page - Phase 7
+
+- [x] Upload all 10 Scout photos to CDN
+- [x] Scout confirmed as 1961 model year (assembly began Dec 1960) - one of first 500 ever built
+- [x] Create dedicated /builds/scout page with full story and specs
+- [x] Scout specs: 1961 IH Scout 80, one of first 500 produced, 5.3 LS 500hp, 4L60E, Dana 44 front / Dana 60 rear (cut to fit), half-cab conversion, built by Clay for wife Stephanie
+- [x] Update Scout card in homepage founding fleet with real specs and link
+- [x] Update Scout card in gallery with real specs and link
+- [x] Register /builds/scout route in App.tsx
