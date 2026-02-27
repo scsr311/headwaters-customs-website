@@ -7,7 +7,7 @@ import { ChevronRight, Zap, Settings, Gauge } from "lucide-react";
 const HC_LOGO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/octXJdDmJfadwTKn.png";
 const K10_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/BGaiChCergqUomgF.jpg";
 const SCOUT_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/TKnpUSmOOzrJVFtW.jpg";
-const C20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/NtDMdgSFayrQbEgp.jpg";
+const C20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/LtFALGpraINijolX.jpg";
 const K20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/YfwgnYwNKuLMlHWp.jpg";
 const F450_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/RfTnqLJyCpNNKxFo.jpg";
 
@@ -56,13 +56,14 @@ const builds: Build[] = [
   {
     id: "c20",
     year: "1972",
-    name: "C20 Cheyenne",
-    subtitle: "The Green Machine",
-    color: "Forest Green / White",
+    name: "C20 Cheyenne Custom Camper Special",
+    subtitle: "The 28-Day Challenge",
+    color: "Shamrock Green on Pearl White",
     image: C20_URL,
     featured: false,
     specs: [],
-    description: "Full build details coming soon.",
+    description: "402/396 Big Block · Turbo 400 · Custom Reverse Hood Scoops · Wooden Bed · Frame-Off in 28 Days · Unveiled July 4th, 2025",
+    link: "/builds/c20",
   },
   {
     id: "k20",

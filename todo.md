@@ -156,3 +156,13 @@
 - [x] Update Scout card in homepage founding fleet with real specs and link
 - [x] Update Scout card in gallery with real specs and link
 - [x] Register /builds/scout route in App.tsx
+
+## C20 Cheyenne Build Page - Phase 8
+
+- [x] Upload all 21 C20 photos to CDN (14 original + 7 new build-process shots)
+- [x] Create dedicated /builds/c20 page with 28-day challenge story
+- [x] C20 specs: 1972 C20 Cheyenne Custom Camper Special, in-house rebuilt 402/396 factory big block, Turbo 400 transmission, custom reverse hood scoops (in-house designed), wooden bed, Shamrock green on pearl white paint, frame-off restoration
+- [x] 28-day challenge: Clay and Mike bet they could do frame-off start to finish in 30 days, unveiled July 4th 2025, finished in 28 days
+- [x] Update C20 card in homepage founding fleet with real specs and link
+- [x] Update C20 card in gallery with real specs and link
+- [x] Register /builds/c20 route in App.tsx
