@@ -1,97 +1,243 @@
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
-import { Image } from "lucide-react";
+import { ChevronRight, Zap, Settings, Gauge } from "lucide-react";
+
+const HC_LOGO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/octXJdDmJfadwTKn.png";
+const K10_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/BGaiChCergqUomgF.jpg";
+const SCOUT_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/TKnpUSmOOzrJVFtW.jpg";
+const C20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/NtDMdgSFayrQbEgp.jpg";
+const K20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/YfwgnYwNKuLMlHWp.jpg";
+const F450_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/RfTnqLJyCpNNKxFo.jpg";
+
+const builds = [
+  {
+    id: "k10",
+    year: "1979",
+    name: "K10 Silverado",
+    subtitle: "The Flagship",
+    color: "Blue on Blue",
+    image: K10_URL,
+    featured: true,
+    specs: [
+      { icon: Settings, label: "Chassis", value: "Full AWD Denali Platform" },
+      { icon: Gauge, label: "Engine", value: "408ci Stroker LS (6.0 Base)" },
+      { icon: Zap, label: "Power", value: "1,200–1,300 HP Turbocharged" },
+    ],
+    description:
+      "The build that defines Headwaters Customs. A '79 K10 body dropped onto a full all-wheel-drive Denali chassis, powered by a 6.0 LS bored and stroked to 408 cubic inches, then force-fed by a turbocharger to produce an estimated 1,200–1,300 horsepower. Vintage soul. Modern muscle. Montana made.",
+  },
+  {
+    id: "scout",
+    year: "1961",
+    name: "International Scout",
+    subtitle: "The Red Menace",
+    color: "Candy Red / White",
+    image: SCOUT_URL,
+    featured: false,
+    specs: [],
+    description: "Full build details coming soon.",
+  },
+  {
+    id: "c20",
+    year: "1972",
+    name: "C20 Cheyenne",
+    subtitle: "The Green Machine",
+    color: "Forest Green / White",
+    image: C20_URL,
+    featured: false,
+    specs: [],
+    description: "Full build details coming soon.",
+  },
+  {
+    id: "k20",
+    year: "1975",
+    name: "K20 Flatbed",
+    subtitle: "The Workhorse",
+    color: "Royal Blue",
+    image: K20_URL,
+    featured: false,
+    specs: [],
+    description: "Full build details coming soon.",
+  },
+  {
+    id: "f450",
+    year: "2015",
+    name: "Ford F-450",
+    subtitle: "The Enforcer",
+    color: "Matte Black",
+    image: F450_URL,
+    featured: false,
+    specs: [],
+    description: "Full build details coming soon.",
+  },
+];
 
 export default function Gallery() {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="min-h-screen flex flex-col bg-background text-foreground">
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative py-32 overflow-hidden">
-        <div 
+      {/* Hero - K10 as gallery hero */}
+      <section className="relative py-36 overflow-hidden">
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: 'url(https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/SRHsvJKGJUhzbKAR.jpg)' }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+          style={{ backgroundImage: `url(${K10_URL})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/75" />
+        <div className="container relative z-10 text-center">
+          <p className="brand-script text-accent text-2xl mb-2">Headwaters Customs</p>
+          <h1 className="hero-title text-white text-5xl lg:text-7xl mb-4">THE BUILDS</h1>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto">
+            Every vehicle that rolls out of our shop carries the same standard — built right,
+            built to last, built in Montana.
+          </p>
         </div>
-        <div className="container relative z-10">
-          <div className="max-w-3xl text-center mx-auto">
-            <span className="text-accent text-sm font-semibold tracking-wider uppercase">
-              Our Work
-            </span>
-            <h1 className="text-5xl lg:text-6xl font-bold mt-4 mb-6 text-white hero-title">
-              Finished Projects
-            </h1>
-            <p className="text-xl text-white/90">
-              Explore our portfolio of completed builds. Each project represents hundreds of hours 
-              of craftsmanship, attention to detail, and passion for automotive excellence.
-            </p>
+      </section>
+
+      {/* Featured Build - K10 */}
+      <section className="py-20 bg-background border-b border-accent/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="brand-script text-accent text-xl mb-1">The Build That Started It All</p>
+            <h2 className="hero-title text-foreground text-4xl md:text-5xl">THE FLAGSHIP</h2>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-br from-accent/40 to-transparent rounded-lg blur-sm group-hover:blur-md transition-all" />
+              <img
+                src={K10_URL}
+                alt="1979 K10 Silverado - Headwaters Customs Flagship"
+                className="relative w-full rounded-lg object-cover shadow-2xl shadow-black/60"
+              />
+              <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-4 py-2 rounded border border-accent/40">
+                <span className="brand-script text-accent text-lg">1979 K10 Silverado</span>
+              </div>
+            </div>
+
+            <div>
+              <p className="text-accent hero-title text-sm tracking-[0.3em] mb-4">BLUE ON BLUE &nbsp;•&nbsp; AWD RESTOMOD</p>
+              <p className="text-foreground/80 text-lg leading-relaxed mb-8">
+                A '79 K10 body dropped onto a full all-wheel-drive Denali chassis, powered by a 6.0
+                LS bored and stroked to 408 cubic inches, then force-fed by a turbocharger to produce
+                an estimated 1,200–1,300 horsepower. This is what Headwaters Customs is built on.
+              </p>
+
+              <div className="grid gap-4 mb-8">
+                {builds[0].specs.map(({ icon: Icon, label, value }) => (
+                  <div key={label} className="flex items-center gap-4 p-4 bg-card rounded-lg border border-accent/20">
+                    <Icon className="w-7 h-7 text-accent flex-shrink-0" />
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-widest">{label}</p>
+                      <p className="text-foreground font-bold">{value}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <Link href="/quote">
+                <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer">
+                  Start Your Build <ChevronRight className="w-4 h-4 ml-2" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Gallery Content */}
-      <section className="py-16">
-        <div className="container">
-          <Card className="p-20 bg-card border-border border-dashed">
-            <div className="text-center space-y-6">
-              <Image className="w-20 h-20 text-muted-foreground mx-auto" />
-              <div className="space-y-2">
-                <h2 className="text-2xl font-bold">Gallery Coming Soon</h2>
-                <p className="text-muted-foreground max-w-md mx-auto">
-                  We're currently building out our project gallery. Check back soon to see our 
-                  completed builds, or contact us to discuss your project.
-                </p>
+      {/* Founding Fleet Grid */}
+      <section className="py-20 bg-card/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-14">
+            <p className="brand-script text-accent text-xl mb-1">Where It All Began</p>
+            <h2 className="hero-title text-foreground text-4xl md:text-5xl">THE FOUNDING FLEET</h2>
+            <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+              Five builds. Five stories. The vehicles that launched Headwaters Customs and set the
+              standard for everything that followed.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {builds.filter(b => !b.featured).map((build) => (
+              <div
+                key={build.id}
+                className="group relative overflow-hidden rounded-lg border border-accent/20 hover:border-accent/60 transition-all duration-300 bg-card"
+              >
+                <div className="relative h-60 overflow-hidden">
+                  <img
+                    src={build.image}
+                    alt={`${build.year} ${build.name}`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3">
+                    <p className="text-white font-bold text-sm tracking-wide">{build.year} {build.name}</p>
+                    <p className="brand-script text-accent text-sm">{build.subtitle}</p>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">{build.color}</p>
+                  <p className="text-foreground/60 text-sm italic">{build.description}</p>
+                </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Link href="/dream-build">
-                  <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                    Try AI Dream Build
-                  </Button>
-                </Link>
-                <Link href="/quote">
-                  <Button size="lg" variant="outline">
-                    Get a Quote
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </Card>
+            ))}
+          </div>
+
+          <p className="text-center text-muted-foreground text-sm mt-10 italic">
+            Full build specs and additional photos for each vehicle coming soon.
+          </p>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-accent/10 border-y border-accent/30 text-center">
+        <div className="container mx-auto px-4">
+          <p className="brand-script text-accent text-3xl mb-4">Ready to Build Something Legendary?</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/dream-build">
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer">
+                AI Dream Build
+              </Button>
+            </Link>
+            <Link href="/quote">
+              <Button size="lg" variant="outline" className="border-accent/60 text-foreground hover:border-accent font-bold tracking-widest uppercase cursor-pointer">
+                Get a Quote
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-border bg-card/50 backdrop-blur-sm mt-auto">
-        <div className="container mx-auto px-4 py-8">
+      <footer className="border-t border-accent/20 bg-card/50 mt-auto">
+        <div className="container mx-auto px-4 py-10">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="font-bold text-lg mb-4">Headwaters Customs LLC</h3>
-              <p className="text-muted-foreground text-sm">
-                5088 US Hwy 287 N<br />
-                Ennis, MT 59729<br />
-                1.5 mi north of Ennis
+              <img src={HC_LOGO} alt="Headwaters Customs" className="h-12 w-auto mb-4" />
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                5088 US Hwy 287 N<br />Ennis, MT 59729<br />1.5 mi north of Ennis
               </p>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+              <h3 className="hero-title text-sm tracking-widest mb-4">QUICK LINKS</h3>
               <div className="space-y-2 text-sm">
-                <Link href="/services"><a className="block text-muted-foreground hover:text-accent transition-colors">Services</a></Link>
-                <Link href="/gallery"><a className="block text-muted-foreground hover:text-accent transition-colors">Gallery</a></Link>
-                <Link href="/about"><a className="block text-muted-foreground hover:text-accent transition-colors">About</a></Link>
-                <Link href="/contact"><a className="block text-muted-foreground hover:text-accent transition-colors">Contact</a></Link>
+                <Link href="/services"><span className="block text-muted-foreground hover:text-accent transition-colors cursor-pointer">Services</span></Link>
+                <Link href="/gallery"><span className="block text-muted-foreground hover:text-accent transition-colors cursor-pointer">Gallery</span></Link>
+                <Link href="/about"><span className="block text-muted-foreground hover:text-accent transition-colors cursor-pointer">About</span></Link>
+                <Link href="/contact"><span className="block text-muted-foreground hover:text-accent transition-colors cursor-pointer">Contact</span></Link>
               </div>
             </div>
             <div>
-              <h3 className="font-bold text-lg mb-4">Connect</h3>
-              <p className="text-muted-foreground text-sm">
-                Ready to start your build? Get in touch with our team today.
-              </p>
+              <h3 className="hero-title text-sm tracking-widest mb-4">GET IN TOUCH</h3>
+              <div className="space-y-2 text-sm text-muted-foreground">
+                <p><a href="tel:406-451-1394" className="hover:text-accent transition-colors">406-451-1394 (Mike)</a></p>
+                <p><a href="tel:816-645-7054" className="hover:text-accent transition-colors">816-645-7054 (Clay)</a></p>
+                <p><a href="mailto:mikehwcmt@gmail.com" className="hover:text-accent transition-colors">mikehwcmt@gmail.com</a></p>
+              </div>
             </div>
           </div>
-          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
+          <div className="border-t border-accent/20 mt-8 pt-6 text-center text-xs text-muted-foreground tracking-widest uppercase">
             © {new Date().getFullYear()} Headwaters Customs LLC. All rights reserved.
           </div>
         </div>

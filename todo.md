@@ -107,3 +107,23 @@
 - [x] Align typography with brand style (bold condensed headers, elegant script taglines)
 - [x] Add mobile hamburger menu for full navigation on small screens
 - [x] Switch ThemeProvider to dark mode to match brand
+
+## Real Vehicle Integration - Phase 4
+
+- [x] Upload '79 K10 blue-on-blue (IMG_1038.jpg) to CDN
+- [x] Upload '61 Scout red (IMG_2828.jpg) to CDN
+- [x] Upload '72 C20 green (IMG_3058.jpg) to CDN
+- [x] Upload '75 K20 blue flatbed (IMG_0045.jpg) to CDN
+- [x] Upload 2015 F450 blacked-out (IMG_1749.jpg) to CDN
+- [x] Replace homepage hero background with '79 K10
+- [x] Build 'The Founding Fleet' showcase section on homepage
+- [x] Update Gallery page with all 5 real vehicle photos and captions
+- [x] Add K10 full spec callout (chassis, engine, HP) - other 4 pending owner write-ups
+- [ ] Add full specs for Scout, C20, K20, F450 when owner provides write-ups
+
+## K10 Build Specs (confirmed by owner)
+- 1979 K10 body on full AWD Denali chassis
+- 6.0 LS stroked to 408 cubic inches
+- Turbocharged - estimated 1,200-1,300 hp
+- This is the "hero build" / face of the business
+- Must be featured prominently with full spec callout on homepage
