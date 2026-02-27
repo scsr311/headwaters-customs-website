@@ -29,7 +29,7 @@ const builds: Build[] = [
     id: "k10",
     year: "1979",
     name: "K10 Silverado",
-    subtitle: "The Flagship",
+    subtitle: "Project Bill's Banshee",
     color: "Blue on Blue",
     image: K10_URL,
     featured: true,

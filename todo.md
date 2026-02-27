@@ -166,3 +166,9 @@
 - [x] Update C20 card in homepage founding fleet with real specs and link
 - [x] Update C20 card in gallery with real specs and link
 - [x] Register /builds/c20 route in App.tsx
+
+## K10 Nickname Update
+
+- [x] Update K10 nickname from "The Flagship" to "Project Bill's Banshee" on Homepage
+- [x] Update K10 nickname from "The Flagship" to "Project Bill's Banshee" on Gallery page
+- [x] Update K10 nickname on any dedicated K10 build page if it exists (no dedicated page yet)

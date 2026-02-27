@@ -29,7 +29,7 @@ const foundingBuilds: FoundingBuild[] = [
     id: "k10",
     year: "1979",
     name: "K10 Silverado",
-    nickname: "The Flagship",
+    nickname: "Project Bill's Banshee",
     color: "Blue on Blue",
     image: K10_URL,
     isFeatured: true,
