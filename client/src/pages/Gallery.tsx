@@ -67,7 +67,7 @@ const builds: Build[] = [
     id: "k20",
     year: "1975",
     name: "K20 Flatbed",
-    subtitle: "The Workhorse",
+    subtitle: "Project Tweety Bird",
     color: "Royal Blue",
     image: K20_URL,
     featured: false,
@@ -78,13 +78,14 @@ const builds: Build[] = [
   {
     id: "f450",
     year: "2015",
-    name: "Ford F-450",
-    subtitle: "The Enforcer",
-    color: "Matte Black",
+    name: "Ford F-450 Super Duty",
+    subtitle: "Project Hell Bitch",
+    color: "Vivid Satin Black Wrap",
     image: F450_URL,
     featured: false,
     specs: [],
-    description: "Full build details coming soon.",
+    description: "Rollover Restoration · Move Bumpers · Bradford Flatbed · KC HiLiTES · Bulldog Chip + EGR Delete",
+    link: "/builds/f450",
   },
 ];
 

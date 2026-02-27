@@ -67,7 +67,7 @@ const foundingBuilds: FoundingBuild[] = [
     id: "k20",
     year: "1975",
     name: "K20 Flatbed",
-    nickname: "The Workhorse",
+    nickname: "Project Tweety Bird",
     color: "Royal Blue",
     image: K20_URL,
     isFeatured: false,
@@ -78,13 +78,14 @@ const foundingBuilds: FoundingBuild[] = [
   {
     id: "f450",
     year: "2015",
-    name: "Ford F-450",
-    nickname: "The Enforcer",
-    color: "Matte Black",
+    name: "Ford F-450 Super Duty",
+    nickname: "Project Hell Bitch",
+    color: "Vivid Satin Black Wrap",
     image: F450_URL,
     isFeatured: false,
     specs: [],
-    description: "Full build details coming soon. Stay tuned.",
+    description: "Rollover Restoration · Move Bumpers · Bradford Flatbed · KC HiLiTES · Bulldog Chip + EGR Delete",
+    link: "/builds/f450",
   },
 ];
 

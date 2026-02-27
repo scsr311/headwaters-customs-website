@@ -136,3 +136,13 @@
 - [x] Add K20 specs: 5.3 LS, 400hp, 4L80E, custom distressed leather interior, full nut-and-bolt restoration
 - [x] Register /builds/k20 route in App.tsx
 - [x] Link K20 card in gallery/homepage to dedicated build page
+
+## F450 Hell Bitch Build Page - Phase 6
+
+- [x] Upload all 18 F450 photos to CDN
+- [x] Update K20 nickname to "Project Tweety Bird" across homepage and gallery
+- [x] Create dedicated /builds/f450 page with full photo gallery and specs
+- [x] F450 specs: 2015 Ford F-450 Super Duty, rollover restoration, Move bumpers, Bradford flatbed (customized), remote adjustable airbags, KC HiLiTES, Vivid Satin Black wrap, Fuel 20" black wheels, Bulldog performance chip, EGR delete
+- [x] Update F450 card in homepage founding fleet with real specs and link
+- [x] Update F450 card in gallery with real specs and link
+- [x] Register /builds/f450 route in App.tsx

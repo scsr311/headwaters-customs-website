@@ -12,6 +12,7 @@ import DreamBuild from "./pages/DreamBuild";
 import QuoteRequest from "./pages/QuoteRequest";
 import Gallery from "./pages/Gallery";
 import BuildK20 from "./pages/BuildK20";
+import BuildF450 from "./pages/BuildF450";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -25,6 +26,7 @@ function Router() {
       <Route path="/quote" component={QuoteRequest} />
       <Route path="/gallery" component={Gallery} />
       <Route path="/builds/k20" component={BuildK20} />
+      <Route path="/builds/f450" component={BuildF450} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
