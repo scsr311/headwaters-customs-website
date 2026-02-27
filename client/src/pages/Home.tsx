@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <Link href="/">
               <img 
-                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/GOLdLLbaEEdpdWGF.png" 
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/octXJdDmJfadwTKn.png" 
                 alt="Headwaters Customs" 
                 className="h-12 w-auto cursor-pointer hover:opacity-90 transition-opacity"
               />
@@ -116,24 +116,24 @@ export default function Home() {
           {/* Logo */}
           <div className="mb-8">
             <img 
-              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/GOLdLLbaEEdpdWGF.png" 
+              src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/octXJdDmJfadwTKn.png" 
               alt="Headwaters Customs Logo" 
               className="mx-auto w-64 h-auto md:w-96 drop-shadow-2xl"
             />
           </div>
 
           {/* Main Heading */}
-          <h1 className="hero-title text-white mb-4 text-4xl md:text-5xl lg:text-6xl">
-            STEEL, SOUL, AND THE SPIRIT OF THE MADISON
+          <h1 className="hero-title text-white mb-2 text-5xl md:text-7xl lg:text-8xl drop-shadow-2xl">
+            BORN AT THE HEADWATERS
           </h1>
 
-          {/* Slogan */}
-          <p className="hero-subtitle text-white mb-4">
-            Artistry Forged Through Steel, Built to Outlast the Ordinary
+          {/* Script Tagline */}
+          <p className="brand-script text-gold mb-3 text-2xl md:text-3xl drop-shadow-lg">
+            Built to Outlast the Ordinary
           </p>
           
           {/* Services Tagline */}
-          <p className="hero-subtitle text-white/90 mb-12">
+          <p className="hero-title text-white/90 mb-12 text-lg md:text-xl tracking-widest">
             Frame-Off Restorations • LS Swaps • Montana Built
           </p>
 

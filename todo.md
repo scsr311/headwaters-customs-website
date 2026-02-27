@@ -95,3 +95,15 @@
 - [x] Ensure all hero images are optimized for web
 - [x] Verify consistent hero styling across all pages
 - [x] Apply Navigation component to all pages for consistency
+
+## Brand Correction - Phase 3
+
+- [x] Upload real HC badge logo to CDN
+- [x] Replace AI-generated logo with real HC badge across all pages
+- [x] Update Navigation component to use real HC badge
+- [x] Update homepage hero to use real HC badge
+- [x] Match dark/gold dramatic aesthetic from brand reference images
+- [x] Update color scheme to deep dark backgrounds with gold accents
+- [x] Align typography with brand style (bold condensed headers, elegant script taglines)
+- [x] Add mobile hamburger menu for full navigation on small screens
+- [x] Switch ThemeProvider to dark mode to match brand
