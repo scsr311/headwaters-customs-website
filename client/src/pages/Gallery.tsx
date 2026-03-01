@@ -154,11 +154,11 @@ export default function Gallery() {
                 ))}
               </div>
 
-              <Link href="/quote">
-                <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer">
+              <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer" asChild>
+                <Link href="/quote">
                   Start Your Build <ChevronRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -220,16 +220,12 @@ export default function Gallery() {
         <div className="container mx-auto px-4">
           <p className="brand-script text-accent text-3xl mb-4">Ready to Build Something Legendary?</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/dream-build">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer">
-                AI Dream Build
-              </Button>
-            </Link>
-            <Link href="/quote">
-              <Button size="lg" variant="outline" className="border-accent/60 text-foreground hover:border-accent font-bold tracking-widest uppercase cursor-pointer">
-                Get a Quote
-              </Button>
-            </Link>
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer" asChild>
+              <Link href="/dream-build">AI Dream Build</Link>
+            </Button>
+            <Button size="lg" variant="outline" className="border-accent/60 text-foreground hover:border-accent font-bold tracking-widest uppercase cursor-pointer" asChild>
+              <Link href="/quote">Get a Quote</Link>
+            </Button>
           </div>
         </div>
       </section>

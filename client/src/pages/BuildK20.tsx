@@ -155,16 +155,12 @@ export default function BuildK20() {
             Every build starts with a conversation. Tell us what you have and what you want — we'll take it from there.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/quote">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer">
-                Get a Quote
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button size="lg" variant="outline" className="border-accent/60 text-foreground hover:border-accent font-bold tracking-widest uppercase cursor-pointer">
-                Contact Us
-              </Button>
-            </Link>
+            <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer" asChild>
+              <Link href="/quote">Get a Quote</Link>
+            </Button>
+            <Button size="lg" variant="outline" className="border-accent/60 text-foreground hover:border-accent font-bold tracking-widest uppercase cursor-pointer" asChild>
+              <Link href="/contact">Contact Us</Link>
+            </Button>
           </div>
         </div>
       </section>

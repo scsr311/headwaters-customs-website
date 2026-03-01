@@ -232,12 +232,12 @@ export default function DreamBuild() {
                               Download
                             </Button>
                           </a>
-                          <Link href="/quote">
-                            <Button size="sm" className="flex-1 bg-accent text-accent-foreground hover:bg-accent/90">
+                          <Button size="sm" className="flex-1 bg-accent text-accent-foreground hover:bg-accent/90" asChild>
+                            <Link href="/quote">
                               Make It Real
                               <ArrowRight className="w-4 h-4 ml-2" />
-                            </Button>
-                          </Link>
+                            </Link>
+                          </Button>
                         </div>
                       </div>
                     </Card>
@@ -259,17 +259,15 @@ export default function DreamBuild() {
               Get a detailed quote and timeline for your custom build.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/quote">
-                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
+                <Link href="/quote">
                   Get a Quote
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button size="lg" variant="outline">
-                  Contact Us
-                </Button>
-              </Link>
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/contact">Contact Us</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -290,10 +288,10 @@ export default function DreamBuild() {
             <div>
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
               <div className="space-y-2 text-sm">
-                <Link href="/services"><a className="block text-muted-foreground hover:text-accent transition-colors">Services</a></Link>
-                <Link href="/gallery"><a className="block text-muted-foreground hover:text-accent transition-colors">Gallery</a></Link>
-                <Link href="/about"><a className="block text-muted-foreground hover:text-accent transition-colors">About</a></Link>
-                <Link href="/contact"><a className="block text-muted-foreground hover:text-accent transition-colors">Contact</a></Link>
+                <Link href="/services" className="block text-muted-foreground hover:text-accent transition-colors">Services</Link>
+                <Link href="/gallery" className="block text-muted-foreground hover:text-accent transition-colors">Gallery</Link>
+                <Link href="/about" className="block text-muted-foreground hover:text-accent transition-colors">About</Link>
+                <Link href="/contact" className="block text-muted-foreground hover:text-accent transition-colors">Contact</Link>
               </div>
             </div>
             <div>

@@ -136,16 +136,12 @@ export default function QuoteRequest() {
               We'll review everything and send you a detailed quote within 48 hours.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/">
-                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                  Back to Home
-                </Button>
-              </Link>
-              <Link href="/dream-build">
-                <Button size="lg" variant="outline">
-                  Try AI Dream Build
-                </Button>
-              </Link>
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90" asChild>
+                <Link href="/">Back to Home</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/dream-build">Try AI Dream Build</Link>
+              </Button>
             </div>
           </Card>
         </div>
@@ -327,10 +323,10 @@ export default function QuoteRequest() {
             <div>
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
               <div className="space-y-2 text-sm">
-                <Link href="/services"><a className="block text-muted-foreground hover:text-accent transition-colors">Services</a></Link>
-                <Link href="/gallery"><a className="block text-muted-foreground hover:text-accent transition-colors">Gallery</a></Link>
-                <Link href="/about"><a className="block text-muted-foreground hover:text-accent transition-colors">About</a></Link>
-                <Link href="/contact"><a className="block text-muted-foreground hover:text-accent transition-colors">Contact</a></Link>
+                <Link href="/services" className="block text-muted-foreground hover:text-accent transition-colors">Services</Link>
+                <Link href="/gallery" className="block text-muted-foreground hover:text-accent transition-colors">Gallery</Link>
+                <Link href="/about" className="block text-muted-foreground hover:text-accent transition-colors">About</Link>
+                <Link href="/contact" className="block text-muted-foreground hover:text-accent transition-colors">Contact</Link>
               </div>
             </div>
             <div>

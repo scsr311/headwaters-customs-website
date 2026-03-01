@@ -227,10 +227,10 @@ export default function Contact() {
             <div>
               <h3 className="font-bold text-lg mb-4">Quick Links</h3>
               <div className="space-y-2 text-sm">
-                <Link href="/services"><a className="block text-muted-foreground hover:text-accent transition-colors">Services</a></Link>
-                <Link href="/gallery"><a className="block text-muted-foreground hover:text-accent transition-colors">Gallery</a></Link>
-                <Link href="/about"><a className="block text-muted-foreground hover:text-accent transition-colors">About</a></Link>
-                <Link href="/contact"><a className="block text-muted-foreground hover:text-accent transition-colors">Contact</a></Link>
+                <Link href="/services" className="block text-muted-foreground hover:text-accent transition-colors">Services</Link>
+                <Link href="/gallery" className="block text-muted-foreground hover:text-accent transition-colors">Gallery</Link>
+                <Link href="/about" className="block text-muted-foreground hover:text-accent transition-colors">About</Link>
+                <Link href="/contact" className="block text-muted-foreground hover:text-accent transition-colors">Contact</Link>
               </div>
             </div>
             <div>

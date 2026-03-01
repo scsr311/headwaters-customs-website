@@ -176,3 +176,8 @@
 ## Bug Fix - Homepage Hero CTA Buttons
 
 - [x] Fix "Get a Quote" button floating/misaligned below AI Dream Build button in hero section — root cause was nested <a> tags from Link wrapping Button; fixed with asChild pattern across all hero CTAs
+
+## Bug Fix - Nested Anchor Tags Site-Wide
+
+- [x] Fix nested <a> tag errors on About page
+- [x] Audit and fix nested <a> tag errors on all remaining pages — fixed Services, Contact, DreamBuild, QuoteRequest, Gallery, BuildK20 (F450/Scout/C20 used span not Button so were not affected)
