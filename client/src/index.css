@@ -171,6 +171,15 @@
     text-transform: none;
   }
   
+  /* Building sign match - Teko Bold, wide letter-spacing like the shop sign */
+  .sign-title {
+    font-family: 'Teko', 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    line-height: 0.9;
+  }
+  
   /* Section headings - Cinzel for premium feel */
   .brand-heading {
     font-family: 'Cinzel', serif;

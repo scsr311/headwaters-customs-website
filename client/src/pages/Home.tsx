@@ -120,8 +120,8 @@ export default function Home() {
             />
           </div>
 
-          <h1 className="hero-title text-white mb-2 text-5xl md:text-7xl lg:text-8xl drop-shadow-2xl leading-none">
-            BORN AT THE HEADWATERS
+          <h1 className="sign-title text-white mb-2 drop-shadow-2xl" style={{ fontSize: 'clamp(3rem, 10vw, 7rem)' }}>
+            HEADWATERS<br />CUSTOMS
           </h1>
 
           <p className="brand-script text-gold mb-4 text-2xl md:text-3xl drop-shadow-lg">

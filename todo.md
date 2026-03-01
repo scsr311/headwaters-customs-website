@@ -188,3 +188,9 @@
 - [x] Scout: fixed owner name spelling to "Steffanie's Scout" on Homepage, Gallery, and BuildScout page (specs + hero + body text)
 - [x] Tweety Bird (K20): updated description to "Custom Interior with Distressed Leather Accents" on Homepage and Gallery
 - [x] Hell Bitch: fixed paint brand spelling to "Vivvid" on Homepage, Gallery, and BuildF450 page (specs + body text)
+
+## Hero Headline Update - Phase 10
+
+- [x] Identified Teko Bold as closest Google Font match to building sign lettering (tall, uniform stroke, wide-spaced condensed)
+- [x] Replaced "Born at the Headwaters" with "HEADWATERS / CUSTOMS" using sign-title class on hero
+- [x] "Built to Outlast the Ordinary" tagline kept below in brand-script font
