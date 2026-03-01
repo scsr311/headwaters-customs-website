@@ -194,3 +194,5 @@
 - [x] Identified Teko Bold as closest Google Font match to building sign lettering (tall, uniform stroke, wide-spaced condensed)
 - [x] Replaced "Born at the Headwaters" with "HEADWATERS / CUSTOMS" using sign-title class on hero
 - [x] "Built to Outlast the Ordinary" tagline kept below in brand-script font
+- [x] Put "HEADWATERS CUSTOMS" on one line in hero
+- [x] Match font to building sign — Playfair Display 700, wide letter-spacing (user confirmed Option 1 closest match)

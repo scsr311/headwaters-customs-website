@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Font Comparison – Headwaters Customs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Ultra&family=Abril+Fatface&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #aaa;
+      margin-bottom: 2rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .sign-ref {
+      display: block;
+      margin: 0 auto 2.5rem;
+      max-width: 700px;
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid #444;
+    }
+    .label {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 0.75rem;
+      color: #888;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 2.5rem 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .card .font-name {
+      font-family: sans-serif;
+      font-size: 0.7rem;
+      color: #666;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+    .option-1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(2.5rem, 8vw, 5.5rem);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1;
+    }
+    .option-2 {
+      font-family: 'Ultra', serif;
+      font-size: clamp(2.5rem, 8vw, 5.5rem);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1;
+    }
+    .option-3 {
+      font-family: 'Abril Fatface', serif;
+      font-size: clamp(2.5rem, 8vw, 5.5rem);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #fff;
+      line-height: 1;
+    }
+    .note {
+      font-family: sans-serif;
+      font-size: 0.72rem;
+      color: #555;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+    .divider {
+      border: none;
+      border-top: 1px solid #2a2a2a;
+      margin: 0.5rem 0 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Font Comparison — Which matches your building sign?</h1>
+
+  <p class="label">Your building sign (reference)</p>
+  <img class="sign-ref" src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/ObQRsyWSURepcPIp.jpg" alt="Headwaters Customs building sign" />
+
+  <hr class="divider" />
+
+  <div class="card">
+    <div class="font-name">Option 1 — Playfair Display Black</div>
+    <div class="option-1">HEADWATERS CUSTOMS</div>
+    <div class="note">High contrast strokes, elegant bracketed serifs, strong vertical weight</div>
+  </div>
+
+  <div class="card">
+    <div class="font-name">Option 2 — Ultra</div>
+    <div class="option-2">HEADWATERS CUSTOMS</div>
+    <div class="note">Very heavy slab serif, uniform thick strokes, bold and industrial</div>
+  </div>
+
+  <div class="card">
+    <div class="font-name">Option 3 — Abril Fatface</div>
+    <div class="option-3">HEADWATERS CUSTOMS</div>
+    <div class="note">High contrast display serif, wide letterforms, dramatic thick/thin variation</div>
+  </div>
+
+  <p style="text-align:center; color:#555; font-size:0.75rem; margin-top:2rem;">Tell Manus which option (1, 2, or 3) looks closest to your sign and it will be applied to the website.</p>
+</body>
+</html>
