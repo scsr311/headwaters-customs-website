@@ -181,3 +181,10 @@
 
 - [x] Fix nested <a> tag errors on About page
 - [x] Audit and fix nested <a> tag errors on all remaining pages — fixed Services, Contact, DreamBuild, QuoteRequest, Gallery, BuildK20 (F450/Scout/C20 used span not Button so were not affected)
+
+## Content Corrections - Phase 9
+
+- [x] K10 (Project Bill's Banshee): changed color label from "Blue on Blue" to "Bill's Banshee" on Homepage and Gallery
+- [x] Scout: fixed owner name spelling to "Steffanie's Scout" on Homepage, Gallery, and BuildScout page (specs + hero + body text)
+- [x] Tweety Bird (K20): updated description to "Custom Interior with Distressed Leather Accents" on Homepage and Gallery
+- [x] Hell Bitch: fixed paint brand spelling to "Vivvid" on Homepage, Gallery, and BuildF450 page (specs + body text)

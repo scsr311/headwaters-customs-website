@@ -31,7 +31,7 @@ const photos = [
 
 const specs = [
   { icon: Shield, label: "Origin Story", value: "Rollover Restoration — Back to New" },
-  { icon: Wrench, label: "Exterior", value: "Vivid Satin Black Full Wrap" },
+  { icon: Wrench, label: "Exterior", value: "Vivvid Satin Black Full Wrap" },
   { icon: Star, label: "Bumpers", value: "Move Front & Rear Bumpers" },
   { icon: Settings, label: "Bed", value: "Bradford Flatbed — Custom Fabricated" },
   { icon: Gauge, label: "Suspension", value: "Remote Adjustable Air Bags" },
@@ -103,7 +103,7 @@ export default function BuildF450() {
                 </p>
                 <p>
                   Once the foundation was solid, we went to work building something the customer could be proud of. 
-                  A full Vivid Satin Black wrap gives her that blacked-out tactical look. Move bumpers front and rear 
+                  A full Vivvid Satin Black wrap gives her that blacked-out tactical look. Move bumpers front and rear 
                   add serious protection and presence. A custom-fabricated Bradford flatbed replaces the factory bed, 
                   built to work as hard as the truck itself.
                 </p>

@@ -23,7 +23,7 @@ const photos = [
 
 const specs = [
   { icon: Star, label: "Rarity", value: "One of the First 500 Scout 80s Ever Built" },
-  { icon: Heart, label: "Built For", value: "Stephanie — Clay's Wife" },
+  { icon: Heart, label: "Built For", value: "Steffanie — Clay's Wife" },
   { icon: Zap, label: "Engine", value: "5.3 LS — 500 HP" },
   { icon: Settings, label: "Transmission", value: "4L60E Automatic" },
   { icon: Wrench, label: "Front Axle", value: "Dana 44 — Cut to Fit" },
@@ -66,7 +66,7 @@ export default function BuildScout() {
             <div>
               <p className="text-accent text-xs font-bold uppercase tracking-[0.3em]">1961 International Harvester Scout 80</p>
               <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tight text-white leading-none">
-                Stephanie's<br />
+                Steffanie's<br />
                 <span className="text-red-500">Scout</span>
               </h1>
             </div>
@@ -95,7 +95,7 @@ export default function BuildScout() {
                 </p>
                 <p>
                   Headwaters Customs co-founder/co-owner Clay built this Scout as a personal project for his wife, 
-                  Stephanie. When you're building something for the person you love, you don't cut corners — and this 
+                  Steffanie. When you're building something for the person you love, you don't cut corners — and this 
                   build reflects that. Every decision was made with intention, from the Dana 44 front and Dana 60 rear 
                   axles cut down to fit the narrow Scout body, to the half-cab conversion that gives it a look unlike 
                   anything else on the road.
