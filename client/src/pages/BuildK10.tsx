@@ -31,7 +31,7 @@ const specs = [
   { icon: Zap, label: "Engine", value: "408ci Stroker LS (6.0 Base)" },
   { icon: Gauge, label: "Power", value: "1,200–1,300 HP Turbocharged" },
   { icon: Settings, label: "Chassis", value: "Full AWD Denali Platform" },
-  { icon: Wrench, label: "Paint", value: "Bill's Banshee Blue on Blue Two-Tone" },
+  { icon: Wrench, label: "Paint", value: "Bill's Banshee Two-Tone" },
   { icon: Settings, label: "Wheels", value: "Chrome Custom Wheels" },
   { icon: Gauge, label: "Headlights", value: "Dual Round LED Retrofit" },
   { icon: Wrench, label: "Grille", value: "Custom Billet Grille" },
