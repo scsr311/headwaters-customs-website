@@ -28,7 +28,8 @@ const services = [
       "Modern transmission conversions",
       "Upgraded suspension and braking",
       "Air conditioning and audio systems",
-      "Custom wiring and electronics"
+      "Custom wiring and electronics",
+      "Custom designed and fabricated frames and chassis"
     ]
   },
   {

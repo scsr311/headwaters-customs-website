@@ -208,3 +208,7 @@
 ## Scout Color Correction
 
 - [x] Changed Scout paint color from "Candy Red" to "Pull Me Over Red & White Two-Tone" on Homepage, Gallery, and BuildScout page (specs, photo captions, body text)
+
+## Services - Restomod Builds Update
+
+- [x] Added "Custom designed and fabricated frames and chassis" to Restomod Builds bullet list on Services page
