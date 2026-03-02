@@ -190,7 +190,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <p className="brand-script text-accent text-2xl mb-2">The Build That Started It All</p>
-            <h2 className="hero-title text-foreground text-4xl md:text-6xl">THE FLAGSHIP</h2>
+            <h2 className="hero-title text-foreground text-4xl md:text-6xl">BILL'S BANSHEE</h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -210,7 +210,7 @@ export default function Home() {
             {/* Specs + Description */}
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-accent hero-title text-lg tracking-widest">BLUE ON BLUE</span>
+                <span className="text-accent hero-title text-lg tracking-widest">BILL'S BANSHEE</span>
                 <span className="h-px flex-1 bg-accent/30" />
               </div>
 

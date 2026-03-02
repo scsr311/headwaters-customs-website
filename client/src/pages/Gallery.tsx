@@ -132,7 +132,7 @@ export default function Gallery() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <p className="brand-script text-accent text-xl mb-1">The Build That Started It All</p>
-            <h2 className="hero-title text-foreground text-4xl md:text-5xl">THE FLAGSHIP</h2>
+            <h2 className="hero-title text-foreground text-4xl md:text-5xl">BILL'S BANSHEE</h2>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">

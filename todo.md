@@ -239,3 +239,9 @@
 - [x] Add Madison F6 card to Homepage founding fleet
 - [x] Add Madison F6 card to Gallery
 - [x] Register /builds/f6 route in App.tsx
+
+## Critical Fixes - Phase 13
+
+- [x] Found and removed ALL "Blue on Blue" / "THE FLAGSHIP" references — Homepage featured section heading + label, Gallery featured section heading
+- [x] Replaced fabricated "By the Numbers" with accurate "The Shop" card (Founded 2025, Ennis MT, 8000/3000/5000 sq ft)
+- [x] Updated About page team: Mike (co-founder/co-owner), Clay (co-founder/co-owner), Alex (journeyman/production manager), Sachem + Easton + Bricen (apprentice technicians)

@@ -58,27 +58,27 @@ export default function About() {
               </div>
             </div>
             <Card className="p-8 bg-card border-border">
-              <h3 className="text-2xl font-bold mb-6">By the Numbers</h3>
+              <h3 className="text-2xl font-bold mb-6">The Shop</h3>
               <div className="space-y-6">
                 <div className="flex items-center justify-between pb-4 border-b border-border">
-                  <span className="text-muted-foreground">Years in Business</span>
-                  <span className="text-3xl font-bold text-accent">15+</span>
+                  <span className="text-muted-foreground">Founded</span>
+                  <span className="text-3xl font-bold text-accent">2025</span>
                 </div>
                 <div className="flex items-center justify-between pb-4 border-b border-border">
-                  <span className="text-muted-foreground">Completed Builds</span>
-                  <span className="text-3xl font-bold text-accent">200+</span>
-                </div>
-                <div className="flex items-center justify-between pb-4 border-b border-border">
-                  <span className="text-muted-foreground">Expert Technicians</span>
-                  <span className="text-3xl font-bold text-accent">5</span>
+                  <span className="text-muted-foreground">Location</span>
+                  <span className="text-lg font-bold text-accent">Ennis, MT</span>
                 </div>
                 <div className="flex items-center justify-between pb-4 border-b border-border">
                   <span className="text-muted-foreground">Facility Size</span>
-                  <span className="text-3xl font-bold text-accent">8,000</span>
+                  <span className="text-3xl font-bold text-accent">8,000 <span className="text-lg">sq ft</span></span>
+                </div>
+                <div className="flex items-center justify-between pb-4 border-b border-border">
+                  <span className="text-muted-foreground">Paint &amp; Body</span>
+                  <span className="text-3xl font-bold text-accent">3,000 <span className="text-lg">sq ft</span></span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-muted-foreground">Customer Satisfaction</span>
-                  <span className="text-3xl font-bold text-accent">100%</span>
+                  <span className="text-muted-foreground">Fab &amp; Mechanical</span>
+                  <span className="text-3xl font-bold text-accent">5,000 <span className="text-lg">sq ft</span></span>
                 </div>
               </div>
             </Card>
@@ -103,9 +103,9 @@ export default function About() {
                 <h3 className="text-2xl font-bold">Mike</h3>
                 <p className="text-accent font-semibold">Co-Founder / Co-Owner</p>
                 <p className="text-muted-foreground">
-                  Mike brings a passion for precision and an eye for detail that's evident in every build. 
-                  When he's not in the shop, you'll find him with Jax, his two-year-old working line German Shepherd, 
-                  or creating custom metal art.
+                  Mike brings a passion for precision and an eye for detail that's evident in every build.
+                  When he's not in the shop, you'll find him with Jax, his two-year-old working line German Shepherd,
+                  or creating custom welded metal art on commission.
                 </p>
               </div>
             </Card>
@@ -115,40 +115,35 @@ export default function About() {
                 <h3 className="text-2xl font-bold">Clay</h3>
                 <p className="text-accent font-semibold">Co-Founder / Co-Owner</p>
                 <p className="text-muted-foreground">
-                  Clay's expertise in fabrication and mechanical systems ensures that every build not only 
-                  looks incredible but performs flawlessly. His commitment to quality is the foundation of 
+                  Clay's expertise in fabrication and mechanical systems ensures that every build not only
+                  looks incredible but performs flawlessly. His commitment to quality is the foundation of
                   everything we do.
                 </p>
               </div>
             </Card>
-          </div>
 
-          <div className="max-w-3xl mx-auto mt-12">
             <Card className="p-8 bg-card border-border">
-              <h3 className="text-2xl font-bold mb-4">Our Departments</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-bold text-lg mb-2 text-accent">Paint & Body Department</h4>
-                  <p className="text-muted-foreground text-sm mb-2">3,000 sq ft dedicated space</p>
-                  <ul className="space-y-1 text-sm text-muted-foreground">
-                    <li>• 1 Journeyman (Owner)</li>
-                    <li>• 1 Apprentice (2 years experience)</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-bold text-lg mb-2 text-accent">Mechanic / Fabrication Department</h4>
-                  <p className="text-muted-foreground text-sm mb-2">5,000 sq ft dedicated space</p>
-                  <ul className="space-y-1 text-sm text-muted-foreground">
-                    <li>• 1 Journeyman (Owner)</li>
-                    <li>• 1 Apprentice (4 years experience)</li>
-                    <li>• 1 Apprentice (2 years experience)</li>
-                  </ul>
-                </div>
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold">Alex</h3>
+                <p className="text-accent font-semibold">Journeyman &mdash; Production Manager</p>
+                <p className="text-muted-foreground">
+                  Alex keeps the shop moving. As our production manager and journeyman technician,
+                  he coordinates workflow across both departments and ensures every build stays on
+                  schedule without cutting corners.
+                </p>
               </div>
-              <p className="text-muted-foreground text-sm mt-6">
-                Both departments work closely together, cross-training and assisting as needed to ensure 
-                every build receives the attention it deserves.
-              </p>
+            </Card>
+
+            <Card className="p-8 bg-card border-border">
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold">Sachem, Easton &amp; Bricen</h3>
+                <p className="text-accent font-semibold">Apprentice Technicians</p>
+                <p className="text-muted-foreground">
+                  Our three apprentices are learning the trade the right way — hands-on, under direct
+                  mentorship from the owners. Each one is developing the skills and standards that
+                  define a Headwaters Customs build.
+                </p>
+              </div>
             </Card>
           </div>
         </div>
