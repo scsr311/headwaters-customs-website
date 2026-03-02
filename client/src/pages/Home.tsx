@@ -5,11 +5,12 @@ import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
 const HC_LOGO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/octXJdDmJfadwTKn.png";
-const K10_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/BGaiChCergqUomgF.jpg";
+const K10_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/wujHIjLXtKGyopZZ.jpg";
 const SCOUT_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/TKnpUSmOOzrJVFtW.jpg";
 const C20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/LtFALGpraINijolX.jpg";
 const K20_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/YfwgnYwNKuLMlHWp.jpg";
 const F450_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/RfTnqLJyCpNNKxFo.jpg";
+const F6_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/TKYLEmtQYckTWsZB.jpg";
 
 interface FoundingBuild {
   id: string;
@@ -40,6 +41,7 @@ const foundingBuilds: FoundingBuild[] = [
     ],
     description:
       "The build that defines Headwaters Customs. A '79 K10 body dropped onto a full all-wheel-drive Denali chassis, powered by a 6.0 LS bored and stroked to 408 cubic inches, then force-fed by a turbocharger to produce an estimated 1,200–1,300 horsepower. Vintage soul. Modern muscle. Montana made.",
+    link: "/builds/k10",
   },
   {
     id: "scout",
@@ -88,6 +90,18 @@ const foundingBuilds: FoundingBuild[] = [
     specs: [],
     description: "Rollover Restoration · Move Bumpers · Bradford Flatbed · KC HiLiTES · Bulldog Chip + EGR Delete",
     link: "/builds/f450",
+  },
+  {
+    id: "f6",
+    year: "1951",
+    name: "Ford F6",
+    nickname: "Madison",
+    color: "Classic Two-Tone",
+    image: F6_URL,
+    isFeatured: false,
+    specs: [],
+    description: "13-Tap Draft Beer System · Custom Refrigerated Cooler · Beer Crate Bed Conversion · Mobile Taproom",
+    link: "/builds/f6",
   },
 ];
 

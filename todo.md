@@ -223,3 +223,19 @@
 - [x] Added "Sprayable PPF by Peel Clear" to Paint & Body bullet list
 - [x] Expanded Custom Fabrication card: frames/chassis, architectural trusses/structural steel, custom bumpers, stairs/stairways, balconies/railings, gates/entryways, exhaust, roll cages, brackets, ornamental metalwork
 - [x] Added new "Paint Correction & Detail Restoration" service card with full bullet list
+
+## Project Bill's Banshee - Build Page
+
+- [x] Upload 7 K10 photos to CDN
+- [x] Create /builds/k10 dedicated page with full gallery and build story
+- [x] Update K10 card on Homepage with real photo and link
+- [x] Update K10 card on Gallery with real photo and link
+- [x] Register /builds/k10 route in App.tsx
+
+## Madison - 1951 Ford F6 Beer Tap Truck Build Page
+
+- [x] Upload 14 F6 photos to CDN
+- [x] Create /builds/f6 dedicated page with full gallery and build story
+- [x] Add Madison F6 card to Homepage founding fleet
+- [x] Add Madison F6 card to Gallery
+- [x] Register /builds/f6 route in App.tsx

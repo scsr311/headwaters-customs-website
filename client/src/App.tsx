@@ -15,6 +15,8 @@ import BuildK20 from "./pages/BuildK20";
 import BuildF450 from "./pages/BuildF450";
 import BuildScout from "./pages/BuildScout";
 import BuildC20 from "./pages/BuildC20";
+import BuildK10 from "./pages/BuildK10";
+import BuildF6 from "./pages/BuildF6";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -31,6 +33,8 @@ function Router() {
       <Route path="/builds/f450" component={BuildF450} />
       <Route path="/builds/scout" component={BuildScout} />
       <Route path="/builds/c20" component={BuildC20} />
+      <Route path="/builds/k10" component={BuildK10} />
+      <Route path="/builds/f6" component={BuildF6} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
