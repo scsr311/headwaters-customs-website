@@ -9,7 +9,7 @@ const HC_LOGO = "https://files.manuscdn.com/user_upload_by_module/session_file/3
 const HERO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/tffpgntGcckGJlon.jpg";
 
 const photos = [
-  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/tffpgntGcckGJlon.jpg", caption: "Front 3/4 — red & white two-tone with half-cab conversion" },
+  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/tffpgntGcckGJlon.jpg", caption: "Front 3/4 — Pull Me Over Red & white two-tone with half-cab conversion" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/PWdtWkzDvZOJUGrF.jpg", caption: "Straight-on front — LED headlights and custom grille bar" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/vDTzCRRBLzLuZhoy.jpg", caption: "Front 3/4 — Montana mountain backdrop" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/iVGEPoDBqKvLedpR.jpg", caption: "Front 3/4 — Headwaters Customs shop in background" },
@@ -30,6 +30,7 @@ const specs = [
   { icon: Wrench, label: "Rear Axle", value: "Dana 60 — Cut to Fit" },
   { icon: Gauge, label: "Body", value: "Half-Cab Conversion" },
   { icon: Settings, label: "Lighting", value: "LED Headlights + Grille Light Bar" },
+  { icon: Gauge, label: "Paint", value: "Pull Me Over Red & White Two-Tone" },
 ];
 
 export default function BuildScout() {
@@ -103,7 +104,7 @@ export default function BuildScout() {
                 <p>
                   Under the hood, a 5.3 LS pumping 500 horsepower breathes new life into a 60-year-old body. The 4L60E 
                   automatic transmission makes it as easy to drive as it is impressive to look at. LED headlights 
-                  modernize the classic round housings without losing the original character. The red and white two-tone 
+                  modernize the classic round housings without losing the original character. The Pull Me Over Red and white two-tone 
                   paint with period-correct Scout striping honors the original design while making it unmistakably fresh.
                 </p>
                 <p>

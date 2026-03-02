@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
-  Wrench, Paintbrush, Cog, Hammer, Zap, Package 
+  Wrench, Paintbrush, Cog, Hammer, Zap, Package, Printer 
 } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -13,7 +13,7 @@ const services = [
     description: "Complete frame-off restorations that bring classic vehicles back to showroom condition. Every nut, bolt, and component is meticulously restored or replaced to factory specifications—or better.",
     features: [
       "Complete disassembly and documentation",
-      "Frame sandblasting and powder coating",
+      "Frame sandblasting and commercial coatings",
       "Body panel restoration or replacement",
       "Original or upgraded mechanical systems",
       "Concours-level detailing"
@@ -57,14 +57,27 @@ const services = [
   },
   {
     icon: Hammer,
-    title: "Sandblasting & Powder Coating",
-    description: "In-house sandblasting removes rust, paint, and contaminants down to bare metal. Our powder coating provides a durable, professional finish in virtually any color.",
+    title: "Sandblasting & Commercial Coatings",
+    description: "In-house sandblasting strips rust, paint, and contaminants down to bare metal. We apply commercial-grade industrial coatings built to outlast the elements—on chassis, frames, suspension, and more.",
     features: [
       "Media blasting for all components",
       "Rust removal and surface prep",
-      "High-temperature powder coating",
-      "Custom colors and finishes",
-      "Chassis and suspension coating"
+      "Commercial grade epoxy coatings",
+      "Urethane and polyurea coatings",
+      "Cerakoting",
+      "Coming soon: high temperature powder coating"
+    ]
+  },
+  {
+    icon: Printer,
+    title: "3D Printing & Modeling",
+    description: "Custom 3D-printed parts, brackets, and components designed and produced in-house. From prototype fitment pieces to one-off trim and interior parts, we design and print what doesn't exist off the shelf.",
+    features: [
+      "Custom part design and modeling",
+      "Prototype and fitment pieces",
+      "Interior trim and custom panels",
+      "Brackets, mounts, and hardware",
+      "Client-supplied designs accepted"
     ]
   },
   {

@@ -196,3 +196,15 @@
 - [x] "Built to Outlast the Ordinary" tagline kept below in brand-script font
 - [x] Put "HEADWATERS CUSTOMS" on one line in hero
 - [x] Match font to building sign — Playfair Display 700, wide letter-spacing (user confirmed Option 1 closest match)
+
+## Services Update - Phase 11
+
+- [x] Renamed to "Sandblasting & Commercial Coatings" on Services page and Homepage
+- [x] Updated coating bullets: commercial grade epoxy, urethane and polyurea coatings, Cerakoting, coming soon high temperature powder coating
+- [x] Added 3D Printing & Modeling as a new service card on Services page
+- [x] Updated homepage services blurb to include commercial coatings and 3D printing
+- [x] Fixed Frame-Off Restorations bullet that still referenced powder coating
+
+## Scout Color Correction
+
+- [x] Changed Scout paint color from "Candy Red" to "Pull Me Over Red & White Two-Tone" on Homepage, Gallery, and BuildScout page (specs, photo captions, body text)

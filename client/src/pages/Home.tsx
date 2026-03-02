@@ -46,7 +46,7 @@ const foundingBuilds: FoundingBuild[] = [
     year: "1961",
     name: "IH Scout 80",
     nickname: "Steffanie's Scout",
-    color: "Candy Red & White Two-Tone",
+    color: "Pull Me Over Red & White Two-Tone",
     image: SCOUT_URL,
     isFeatured: false,
     specs: [],
@@ -324,7 +324,7 @@ export default function Home() {
               <Wrench className="w-12 h-12 text-accent mx-auto mb-4" />
               <h3 className="hero-title text-xl mb-3">FULL-SERVICE SHOP</h3>
               <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-                Sandblasting, powder coating, frame-off restorations, and custom fabrication — all handled in-house.
+                Sandblasting, commercial coatings, frame-off restorations, custom fabrication, and 3D printing — all handled in-house.
               </p>
               <Button className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase text-sm cursor-pointer" asChild>
                 <Link href="/services">View Services</Link>

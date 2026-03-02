@@ -46,7 +46,7 @@ const builds: Build[] = [
     year: "1961",
     name: "IH Scout 80",
     subtitle: "Steffanie's Scout",
-    color: "Candy Red & White Two-Tone",
+    color: "Pull Me Over Red & White Two-Tone",
     image: SCOUT_URL,
     featured: false,
     specs: [],
@@ -135,7 +135,7 @@ export default function Gallery() {
             </div>
 
             <div>
-              <p className="text-accent hero-title text-sm tracking-[0.3em] mb-4">BLUE ON BLUE &nbsp;•&nbsp; AWD RESTOMOD</p>
+              <p className="text-accent hero-title text-sm tracking-[0.3em] mb-4">BILL'S BANSHEE &nbsp;•&nbsp; AWD RESTOMOD</p>
               <p className="text-foreground/80 text-lg leading-relaxed mb-8">
                 A '79 K10 body dropped onto a full all-wheel-drive Denali chassis, powered by a 6.0
                 LS bored and stroked to 408 cubic inches, then force-fed by a turbocharger to produce
