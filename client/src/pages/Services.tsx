@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { 
-  Wrench, Paintbrush, Cog, Hammer, Zap, Package, Printer 
+  Wrench, Paintbrush, Cog, Hammer, Zap, Package, Printer, Sparkles 
 } from "lucide-react";
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
@@ -53,7 +53,8 @@ const services = [
       "Panel alignment and fitment",
       "Custom paint and graphics",
       "Clear coat and ceramic coatings",
-      "Color matching and blending"
+      "Color matching and blending",
+      "Sprayable PPF by Peel Clear"
     ]
   },
   {
@@ -84,13 +85,33 @@ const services = [
   {
     icon: Package,
     title: "Custom Fabrication",
-    description: "When off-the-shelf parts won't cut it, our fabrication shop creates custom solutions. From one-off brackets to complete chassis modifications, we build what you need.",
+    description: "From automotive chassis to architectural metalwork, our fabrication shop builds what doesn't exist off the shelf. If you can draw it, we can build it — in steel, stainless, or aluminum.",
     features: [
+      "Custom designed and fabricated frames and chassis",
+      "Architectural trusses and structural steel",
+      "Custom bumpers (automotive and commercial)",
+      "Stairs, stairways, and landings",
+      "Balconies, railings, and handrails",
+      "Gates, entryways, and fencing",
       "Custom exhaust systems",
-      "Fuel system fabrication",
       "Roll cages and safety equipment",
-      "Suspension modifications",
-      "Specialty brackets and mounts"
+      "Specialty brackets, mounts, and hardware",
+      "Ornamental and decorative metalwork"
+    ]
+  },
+  {
+    icon: Sparkles,
+    title: "Paint Correction & Detail Restoration",
+    description: "Bring your vehicle's finish back to life without a full repaint. Our paint correction and deep detail service removes years of swirls, oxidation, water spots, and surface contamination — restoring depth, clarity, and gloss to factory or better.",
+    features: [
+      "Multi-stage machine paint correction",
+      "Swirl mark and scratch removal",
+      "Oxidation and water spot elimination",
+      "Surface decontamination and clay bar treatment",
+      "Interior deep clean and conditioning",
+      "Engine bay detailing",
+      "Ceramic coating application",
+      "Sprayable PPF by Peel Clear"
     ]
   }
 ];

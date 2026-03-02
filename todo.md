@@ -212,3 +212,14 @@
 ## Services - Restomod Builds Update
 
 - [x] Added "Custom designed and fabricated frames and chassis" to Restomod Builds bullet list on Services page
+
+## Services - Paint & Body and Custom Fabrication Updates
+
+- [ ] Add "Sprayable PPF by Peel Clear" to Paint & Body bullet list on Services page
+- [ ] Expand Custom Fabrication card with full scope: frames/chassis, architectural trusses/structural steel, custom bumpers, stairs/stairways, balconies/railings, gates/entryways, custom brackets/mounts, ornamental metalwork, and other structural/decorative fabrication
+
+## Services - Three Updates Batch
+
+- [x] Added "Sprayable PPF by Peel Clear" to Paint & Body bullet list
+- [x] Expanded Custom Fabrication card: frames/chassis, architectural trusses/structural steel, custom bumpers, stairs/stairways, balconies/railings, gates/entryways, exhaust, roll cages, brackets, ornamental metalwork
+- [x] Added new "Paint Correction & Detail Restoration" service card with full bullet list
