@@ -245,3 +245,9 @@
 - [x] Found and removed ALL "Blue on Blue" / "THE FLAGSHIP" references — Homepage featured section heading + label, Gallery featured section heading
 - [x] Replaced fabricated "By the Numbers" with accurate "The Shop" card (Founded 2025, Ennis MT, 8000/3000/5000 sq ft)
 - [x] Updated About page team: Mike (co-founder/co-owner), Clay (co-founder/co-owner), Alex (journeyman/production manager), Sachem + Easton + Bricen (apprentice technicians)
+
+## About Page Rewrite - Phase 14
+
+- [x] Rewrote About page with Mike's real answers from question sheet
+- [x] Clay section honest — notes his story coming soon, written from what Mike shared
+- [x] Removed all placeholder/generic copy — origin story, mission, one-stop shop, Montana identity all from real answers
