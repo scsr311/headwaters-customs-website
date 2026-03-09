@@ -72,7 +72,7 @@ const builds: Build[] = [
     year: "1975",
     name: "K20 Flatbed",
     subtitle: "Project Tweety Bird",
-    color: "Royal Blue",
+    color: "Blue Me Away",
     image: K20_URL,
     featured: false,
     specs: [],
@@ -185,7 +185,7 @@ export default function Gallery() {
             <p className="brand-script text-accent text-xl mb-1">Where It All Began</p>
             <h2 className="hero-title text-foreground text-4xl md:text-5xl">THE FOUNDING FLEET</h2>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Five builds. Five stories. The vehicles that launched Headwaters Customs and set the
+              Six builds. Six stories. The vehicles that launched Headwaters Customs and set the
               standard for everything that followed.
             </p>
           </div>

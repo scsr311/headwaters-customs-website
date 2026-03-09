@@ -72,7 +72,7 @@ const foundingBuilds: FoundingBuild[] = [
     year: "1975",
     name: "K20 Flatbed",
     nickname: "Project Tweety Bird",
-    color: "Royal Blue",
+    color: "Blue Me Away",
     image: K20_URL,
     isFeatured: false,
     specs: [],

@@ -8,6 +8,7 @@ import { Link } from "wouter";
 import { useState } from "react";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
+import { trpc } from "@/lib/trpc";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -16,18 +17,19 @@ export default function Contact() {
     phone: "",
     message: ""
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const sendMessage = trpc.contact.send.useMutation({
+    onSuccess: () => {
+      toast.success("Message sent! We'll get back to you within 24 hours.");
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    },
+    onError: () => {
+      toast.error("Failed to send message. Please call us directly at 406-451-1394.");
+    },
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    
-    // TODO: Implement form submission logic
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast.success("Message sent! We'll get back to you within 24 hours.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    setIsSubmitting(false);
+    sendMessage.mutate(formData);
   };
 
   return (
@@ -117,9 +119,9 @@ export default function Contact() {
                     type="submit" 
                     size="lg" 
                     className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
-                    disabled={isSubmitting}
+                    disabled={sendMessage.isPending}
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {sendMessage.isPending ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </Card>
@@ -152,9 +154,8 @@ export default function Contact() {
                     <h3 className="text-xl font-bold mb-2">Phone</h3>
                     <p className="text-muted-foreground">
                       Call us to discuss your project<br />
-                      <a href="tel:+1234567890" className="text-accent hover:underline">
-                        (123) 456-7890
-                      </a>
+                      <a href="tel:406-451-1394" className="text-accent hover:underline">406-451-1394 (Mike)</a><br />
+                      <a href="tel:816-645-7054" className="text-accent hover:underline">816-645-7054 (Clay)</a>
                     </p>
                   </div>
                 </div>
@@ -169,9 +170,7 @@ export default function Contact() {
                     <h3 className="text-xl font-bold mb-2">Email</h3>
                     <p className="text-muted-foreground">
                       Send us your questions<br />
-                      <a href="mailto:info@headwaterscustoms.com" className="text-accent hover:underline">
-                        info@headwaterscustoms.com
-                      </a>
+                      <a href="mailto:mikehwcmt@gmail.com" className="text-accent hover:underline">mikehwcmt@gmail.com</a>
                     </p>
                   </div>
                 </div>

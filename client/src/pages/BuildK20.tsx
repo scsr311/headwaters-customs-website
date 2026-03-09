@@ -63,7 +63,7 @@ export default function BuildK20() {
           </Link>
           <p className="brand-script text-accent text-2xl mb-2">The Founding Fleet</p>
           <h1 className="hero-title text-white text-5xl lg:text-7xl mb-3">1975 K20</h1>
-          <p className="text-white/80 text-lg tracking-widest uppercase">Royal Blue &nbsp;•&nbsp; Full Restoration &nbsp;•&nbsp; LS Swap</p>
+          <p className="text-white/80 text-lg tracking-widest uppercase">Blue Me Away &nbsp;•&nbsp; Full Restoration &nbsp;•&nbsp; LS Swap</p>
         </div>
       </section>
 

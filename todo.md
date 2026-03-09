@@ -251,3 +251,9 @@
 - [x] Rewrote About page with Mike's real answers from question sheet
 - [x] Clay section honest — notes his story coming soon, written from what Mike shared
 - [x] Removed all placeholder/generic copy — origin story, mission, one-stop shop, Montana identity all from real answers
+
+## Pre-Publish Fixes - Phase 15
+
+- [x] Fixed K20 color to "Blue Me Away" on Homepage, Gallery, and BuildK20 hero subtitle
+- [x] Removed dead-end Marketplace, Store, Follow Builds nav links from both desktop and mobile nav
+- [x] Wired Contact form to real tRPC contact.send mutation — notifies owner via Manus notification service; also fixed phone/email to real Headwaters Customs contact info

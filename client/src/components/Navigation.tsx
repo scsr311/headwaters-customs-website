@@ -81,18 +81,6 @@ export default function Navigation() {
                 <span className={linkClass("/gallery")}>Gallery</span>
               </Link>
 
-              <Link href="/marketplace">
-                <span className={linkClass("/marketplace")}>Marketplace</span>
-              </Link>
-
-              <Link href="/store">
-                <span className={linkClass("/store")}>Store</span>
-              </Link>
-
-              <Link href="/builds">
-                <span className={linkClass("/builds")}>Follow Builds</span>
-              </Link>
-
               <Link href="/contact">
                 <span className="cursor-pointer font-bold tracking-wide text-sm uppercase px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all rounded-sm">
                   Contact
@@ -132,15 +120,6 @@ export default function Navigation() {
               </Link>
               <Link href="/gallery" onClick={() => setMobileOpen(false)}>
                 <span className="block py-3 px-2 text-sm font-semibold uppercase tracking-wide text-foreground/90 hover:text-accent border-b border-border/30 transition-colors">Gallery</span>
-              </Link>
-              <Link href="/marketplace" onClick={() => setMobileOpen(false)}>
-                <span className="block py-3 px-2 text-sm font-semibold uppercase tracking-wide text-foreground/90 hover:text-accent border-b border-border/30 transition-colors">Marketplace</span>
-              </Link>
-              <Link href="/store" onClick={() => setMobileOpen(false)}>
-                <span className="block py-3 px-2 text-sm font-semibold uppercase tracking-wide text-foreground/90 hover:text-accent border-b border-border/30 transition-colors">Store</span>
-              </Link>
-              <Link href="/builds" onClick={() => setMobileOpen(false)}>
-                <span className="block py-3 px-2 text-sm font-semibold uppercase tracking-wide text-foreground/90 hover:text-accent border-b border-border/30 transition-colors">Follow Builds</span>
               </Link>
               <Link href="/contact" onClick={() => setMobileOpen(false)}>
                 <span className="block py-3 px-2 text-sm font-bold uppercase tracking-wide text-accent border-b border-border/30 transition-colors">Contact Us</span>
