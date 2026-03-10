@@ -262,3 +262,7 @@
 
 - [x] Updated email to michaelj@headwaterscustomsmt.com
 - [x] Updated hours: Monday–Thursday 7:00 AM–6:00 PM, Friday by appointment, Saturday by appointment, Sunday closed
+
+## Bug Fix - Gallery K10 View Button
+
+- [x] Fixed Bill's Banshee "View" button in Gallery — added "View Full Build" button to featured K10 section linking to /builds/k10; also fixed footer email to michaelj@headwaterscustomsmt.com

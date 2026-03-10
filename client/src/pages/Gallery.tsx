@@ -168,11 +168,18 @@ export default function Gallery() {
                 ))}
               </div>
 
-              <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer" asChild>
-                <Link href="/quote">
-                  Start Your Build <ChevronRight className="w-4 h-4 ml-2" />
-                </Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold tracking-widest uppercase cursor-pointer" asChild>
+                  <Link href="/builds/k10">
+                    View Full Build <ChevronRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+                <Button variant="outline" className="border-accent text-accent hover:bg-accent/10 font-bold tracking-widest uppercase cursor-pointer" asChild>
+                  <Link href="/quote">
+                    Start Your Build
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -268,7 +275,7 @@ export default function Gallery() {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p><a href="tel:406-451-1394" className="hover:text-accent transition-colors">406-451-1394 (Mike)</a></p>
                 <p><a href="tel:816-645-7054" className="hover:text-accent transition-colors">816-645-7054 (Clay)</a></p>
-                <p><a href="mailto:mikehwcmt@gmail.com" className="hover:text-accent transition-colors">mikehwcmt@gmail.com</a></p>
+                <p><a href="mailto:michaelj@headwaterscustomsmt.com" className="hover:text-accent transition-colors">michaelj@headwaterscustomsmt.com</a></p>
               </div>
             </div>
           </div>
