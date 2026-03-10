@@ -266,3 +266,7 @@
 ## Bug Fix - Gallery K10 View Button
 
 - [x] Fixed Bill's Banshee "View" button in Gallery — added "View Full Build" button to featured K10 section linking to /builds/k10; also fixed footer email to michaelj@headwaterscustomsmt.com
+
+## Hell Bitch Flatbed Correction
+
+- [x] Changed "Bradford Flatbed" to "Custom Made & In-House Designed Western Hauler Flatbed" on Gallery, Homepage, and BuildF450 page (specs, photo captions, body text)

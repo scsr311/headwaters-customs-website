@@ -12,18 +12,18 @@ const photos = [
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/ysFjIUXsGURrsjiM.jpg", caption: "Front 3/4 — Move bumper, KC HiLiTES rack, Fuel wheels" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/bksxiEjzPuwTTmLG.jpg", caption: "Straight-on front — Move front bumper with dual LED light bars and winch" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/eSLGgBYyPglZwBRT.jpg", caption: "Front stance — aggressive grille guard and custom hood" },
-  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/AjZQtpvoBWvPSWHc.jpg", caption: "Driver side 3/4 — full satin black wrap and Bradford flatbed" },
+  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/AjZQtpvoBWvPSWHc.jpg", caption: "Driver side 3/4 — full satin black wrap and custom in-house western hauler flatbed" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/kTmFjpgTEWKltnTr.jpg", caption: "Passenger side — full profile with KC HiLiTES roof rack" },
-  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/maNPOrhHxTtFEGCV.jpg", caption: "Driver side profile — Bradford flatbed with custom toolboxes" },
+  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/maNPOrhHxTtFEGCV.jpg", caption: "Driver side profile — custom in-house western hauler flatbed with toolboxes" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/FmKcUsVgdtHzzoRW.jpg", caption: "Passenger side profile — Fuel 20\" black wheels and lift" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/TlUmAzfSxTIUimhO.jpg", caption: "Front — grille guard and LED lighting" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/zphdxJIztFfKBlDf.jpg", caption: "Front 3/4 — Montana mountains backdrop" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/VifapCYATsIaGPMo.jpg", caption: "Front 3/4 — sunset shot" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/hLxlxattbwgifZWp.jpg", caption: "Front 3/4 — dusk lighting" },
-  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/sFYNHIrWmdVyUrvT.jpg", caption: "Rear 3/4 — Bradford flatbed and KC rack detail" },
+  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/sFYNHIrWmdVyUrvT.jpg", caption: "Rear 3/4 — custom western hauler flatbed and KC rack detail" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/vzdrUzhnPXTAEcmX.jpg", caption: "Rear 3/4 — Move rear bumper and step detail" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/tYDWorTcqtYBTzdM.jpg", caption: "Rear — Move rear bumper with integrated step" },
-  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/rfwfEdSmdRicQjMq.jpg", caption: "Rear — Bradford flatbed and toolbox storage" },
+  { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/rfwfEdSmdRicQjMq.jpg", caption: "Rear — custom western hauler flatbed and toolbox storage" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/szSFKiOQCsButMRK.jpg", caption: "Rear — step detail and hitch receiver" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/ovjQYcsHveDVXrZA.jpg", caption: "Passenger side — full profile at sunset" },
   { url: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/tPqJdPVjoBIqVCUt.jpg", caption: "Driver side — full profile at sunset" },
@@ -33,7 +33,7 @@ const specs = [
   { icon: Shield, label: "Origin Story", value: "Rollover Restoration — Back to New" },
   { icon: Wrench, label: "Exterior", value: "Vivvid Satin Black Full Wrap" },
   { icon: Star, label: "Bumpers", value: "Move Front & Rear Bumpers" },
-  { icon: Settings, label: "Bed", value: "Bradford Flatbed — Custom Fabricated" },
+  { icon: Settings, label: "Bed", value: "Custom Made & In-House Designed Western Hauler Flatbed" },
   { icon: Gauge, label: "Suspension", value: "Remote Adjustable Air Bags" },
   { icon: Zap, label: "Lighting", value: "KC HiLiTES — 7-Pod Roof Rack" },
   { icon: Settings, label: "Wheels", value: "Fuel 20\" Black Forged" },
@@ -104,7 +104,7 @@ export default function BuildF450() {
                 <p>
                   Once the foundation was solid, we went to work building something the customer could be proud of. 
                   A full Vivvid Satin Black wrap gives her that blacked-out tactical look. Move bumpers front and rear 
-                  add serious protection and presence. A custom-fabricated Bradford flatbed replaces the factory bed, 
+                  add serious protection and presence. A custom made, in-house designed western hauler flatbed replaces the factory bed, 
                   built to work as hard as the truck itself.
                 </p>
                 <p>

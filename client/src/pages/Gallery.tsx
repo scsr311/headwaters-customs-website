@@ -88,7 +88,7 @@ const builds: Build[] = [
     image: F450_URL,
     featured: false,
     specs: [],
-    description: "Rollover Restoration · Move Bumpers · Bradford Flatbed · KC HiLiTES · Bulldog Chip + EGR Delete",
+    description: "Rollover Restoration · Move Bumpers · Custom Made In-House Western Hauler Flatbed · KC HiLiTES · Bulldog Chip + EGR Delete",
     link: "/builds/f450",
   },
   {
