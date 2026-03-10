@@ -186,10 +186,10 @@ export default function About() {
             {/* Apprentices */}
             <Card className="p-8 bg-card border-border">
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold">Sachem, Easton &amp; Bricen</h3>
+                <h3 className="text-2xl font-bold">Sachem, Easton, Bricen &amp; Dan</h3>
                 <p className="text-accent font-semibold tracking-wide uppercase text-sm">Apprentice Technicians</p>
                 <p className="text-muted-foreground leading-relaxed text-sm">
-                  Our three apprentices are learning this trade the right way — hands-on, under direct mentorship from the owners. Each one is developing the skills and the standards that define a Headwaters Customs build. This is how the craft gets passed on.
+                  Our four apprentices are learning this trade the right way — hands-on, under direct mentorship from the owners and Alex. Each one is developing the skills and the standards that define a Headwaters Customs build. This is how the craft gets passed on.
                 </p>
               </div>
             </Card>

@@ -279,3 +279,8 @@
 ## Bill's Banshee Copy Update
 
 - [x] Updated first paragraph on BuildK10 page with Mike's new text about modern performance SUV drivetrain + 500hp + banshee description
+
+## About Page - Add Dan to Apprentices
+
+- [x] Added Dan as fourth apprentice technician on About page
+- [x] Updated description from "three apprentices" to "four apprentices" with mentorship from owners and Alex
