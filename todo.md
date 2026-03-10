@@ -275,3 +275,7 @@
 
 - [x] Updated Madison F6 color to "Natural Patina" on Homepage, Gallery, and BuildF6 specs card
 - [x] Added interactive Google Maps embed to Contact page with real coordinates (45.3744038, -111.7292199) and Get Directions link
+
+## Bill's Banshee Copy Update
+
+- [x] Updated first paragraph on BuildK10 page with Mike's new text about modern performance SUV drivetrain + 500hp + banshee description

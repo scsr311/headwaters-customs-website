@@ -93,7 +93,7 @@ export default function BuildK10() {
               </h2>
               <div className="space-y-4 text-foreground/80 leading-relaxed">
                 <p>
-                  Some builds are about transportation. Some are about nostalgia. Project Bill's Banshee is about neither — it's about what happens when you take one of the cleanest square-body bodies ever made and give it the drivetrain of a modern supercar.
+                  Some builds are about transportation. Some are about nostalgia. Project Bill's Banshee is about neither — it's about what happens when you take one of the cleanest square-body bodies ever made and give it the drivetrain of a modern performance SUV, then add another 500hp. You get something that's unadulterated. Something that screams down the road that is accurately described by nothing better than, well, a banshee.
                 </p>
                 <p>
                   The foundation is a 1979 Chevrolet K10 Silverado — a truck that already had presence in factory form. The two-tone blue paint, the chrome trim, the Silverado badge — all of it preserved and restored to a standard that makes it look like it just rolled off a GM show floor in 1979. Except it didn't. It rolled out of Headwaters Customs in Ennis, Montana.
