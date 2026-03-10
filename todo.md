@@ -257,3 +257,8 @@
 - [x] Fixed K20 color to "Blue Me Away" on Homepage, Gallery, and BuildK20 hero subtitle
 - [x] Removed dead-end Marketplace, Store, Follow Builds nav links from both desktop and mobile nav
 - [x] Wired Contact form to real tRPC contact.send mutation — notifies owner via Manus notification service; also fixed phone/email to real Headwaters Customs contact info
+
+## Contact Page Updates - Phase 16
+
+- [x] Updated email to michaelj@headwaterscustomsmt.com
+- [x] Updated hours: Monday–Thursday 7:00 AM–6:00 PM, Friday by appointment, Saturday by appointment, Sunday closed

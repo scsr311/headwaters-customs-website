@@ -170,7 +170,7 @@ export default function Contact() {
                     <h3 className="text-xl font-bold mb-2">Email</h3>
                     <p className="text-muted-foreground">
                       Send us your questions<br />
-                      <a href="mailto:mikehwcmt@gmail.com" className="text-accent hover:underline">mikehwcmt@gmail.com</a>
+                      <a href="mailto:michaelj@headwaterscustomsmt.com" className="text-accent hover:underline">michaelj@headwaterscustomsmt.com</a>
                     </p>
                   </div>
                 </div>
@@ -184,7 +184,8 @@ export default function Contact() {
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-2">Hours</h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                      <p>Monday – Thursday: 7:00 AM – 6:00 PM</p>
+                      <p>Friday: By Appointment</p>
                       <p>Saturday: By Appointment</p>
                       <p>Sunday: Closed</p>
                     </div>
