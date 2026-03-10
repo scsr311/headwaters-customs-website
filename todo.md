@@ -270,3 +270,8 @@
 ## Hell Bitch Flatbed Correction
 
 - [x] Changed "Bradford Flatbed" to "Custom Made & In-House Designed Western Hauler Flatbed" on Gallery, Homepage, and BuildF450 page (specs, photo captions, body text)
+
+## Madison Color & Google Maps
+
+- [x] Updated Madison F6 color to "Natural Patina" on Homepage, Gallery, and BuildF6 specs card
+- [x] Added interactive Google Maps embed to Contact page with real coordinates (45.3744038, -111.7292199) and Get Directions link

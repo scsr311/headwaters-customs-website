@@ -96,7 +96,7 @@ const builds: Build[] = [
     year: "1951",
     name: "Ford F6",
     subtitle: "Madison",
-    color: "Classic Two-Tone",
+    color: "Natural Patina",
     image: F6_URL,
     featured: false,
     specs: [],

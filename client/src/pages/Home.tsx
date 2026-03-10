@@ -96,7 +96,7 @@ const foundingBuilds: FoundingBuild[] = [
     year: "1951",
     name: "Ford F6",
     nickname: "Madison",
-    color: "Classic Two-Tone",
+    color: "Natural Patina",
     image: F6_URL,
     isFeatured: false,
     specs: [],

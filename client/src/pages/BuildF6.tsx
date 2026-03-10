@@ -47,6 +47,7 @@ const specs = [
   { icon: Wrench, label: "Cooling", value: "Custom Fabricated Refrigerated Cooler" },
   { icon: Gauge, label: "Bed Conversion", value: "Old School Beer Crate Styling" },
   { icon: Settings, label: "Use", value: "Mobile Draft Beer Service" },
+  { icon: Wrench, label: "Finish", value: "Natural Patina" },
 ];
 
 export default function BuildF6() {
@@ -266,7 +267,7 @@ export default function BuildF6() {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <p><a href="tel:406-451-1394" className="hover:text-accent transition-colors">406-451-1394 (Mike)</a></p>
                 <p><a href="tel:816-645-7054" className="hover:text-accent transition-colors">816-645-7054 (Clay)</a></p>
-                <p><a href="mailto:mikehwcmt@gmail.com" className="hover:text-accent transition-colors">mikehwcmt@gmail.com</a></p>
+                <p><a href="mailto:michaelj@headwaterscustomsmt.com" className="hover:text-accent transition-colors">michaelj@headwaterscustomsmt.com</a></p>
               </div>
             </div>
           </div>

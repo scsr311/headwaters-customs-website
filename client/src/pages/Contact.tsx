@@ -200,15 +200,35 @@ export default function Contact() {
       {/* Map Section */}
       <section className="py-16 bg-card/30">
         <div className="container">
+          <div className="mb-6 text-center">
+            <h2 className="text-2xl font-bold mb-2">Find Us</h2>
+            <p className="text-muted-foreground">5088 US Hwy 287 N, Ennis, MT 59729 &mdash; 1.5 miles north of Ennis</p>
+          </div>
           <Card className="overflow-hidden border-border">
-            <div className="aspect-video bg-muted flex items-center justify-center">
-              <div className="text-center space-y-2">
-                <MapPin className="w-12 h-12 text-accent mx-auto" />
-                <p className="text-muted-foreground">Map integration coming soon</p>
-                <p className="text-sm text-muted-foreground">5088 US Hwy 287 N, Ennis, MT 59729</p>
-              </div>
+            <div className="w-full" style={{ height: '480px' }}>
+              <iframe
+                title="Headwaters Customs Location"
+                width="100%"
+                height="100%"
+                style={{ border: 0, display: 'block' }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.5!2d-111.7292199!3d45.3744038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535a9db699b966ef%3A0x90b3d29531377079!2s5088+US-287%2C+Ennis%2C+MT+59729!5e0!3m2!1sen!2sus!4v1741622400000!5m2!1sen!2sus"
+              />
             </div>
           </Card>
+          <div className="mt-4 text-center">
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=5088+US-287+Ennis+MT+59729"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-accent hover:text-accent/80 font-semibold transition-colors"
+            >
+              <MapPin className="w-4 h-4" />
+              Get Directions in Google Maps
+            </a>
+          </div>
         </div>
       </section>
 
