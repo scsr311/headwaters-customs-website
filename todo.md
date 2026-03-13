@@ -284,3 +284,8 @@
 
 - [x] Added Dan as fourth apprentice technician on About page
 - [x] Updated description from "three apprentices" to "four apprentices" with mentorship from owners and Alex
+
+## Social Media Links - Phase 17
+
+- [x] Add Facebook, Instagram, Linktree, Venmo, and Google Business icons to homepage hero section
+- [x] Add same social links to site footer across all pages

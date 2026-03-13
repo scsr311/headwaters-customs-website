@@ -4,6 +4,14 @@ import { Sparkles, FileText, Wrench, ChevronRight, Zap, Settings, Gauge } from "
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 
+const SOCIAL_LINKS = {
+  facebook: "https://www.facebook.com/61587446398372/",
+  instagram: "https://www.instagram.com/headwaterscustomsmt",
+  linktree: "https://linktr.ee/hwcmt",
+  venmo: "https://www.venmo.com/hwcmt",
+  google: "https://www.google.com/maps/place/Headwaters+Customs+LLC/@45.374515,-111.7302046,17z",
+};
+
 const HC_LOGO = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/octXJdDmJfadwTKn.png";
 const K10_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/wujHIjLXtKGyopZZ.jpg";
 const SCOUT_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663161469845/TKnpUSmOOzrJVFtW.jpg";
@@ -174,9 +182,27 @@ export default function Home() {
         {/* Bottom contact strip */}
         <div className="absolute bottom-6 left-0 right-0 z-10">
           <div className="container mx-auto px-4">
-            <div className="flex flex-col sm:flex-row justify-between items-center text-white/70 text-sm tracking-wide">
+            <div className="flex flex-col sm:flex-row justify-between items-center text-white/70 text-sm tracking-wide gap-3">
               <span>5088 US Hwy 287 N, Ennis, MT 59729</span>
-              <div className="flex gap-6 mt-2 sm:mt-0">
+              {/* Social Icons */}
+              <div className="flex items-center gap-4">
+                <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" title="Facebook">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" title="Instagram">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+                <a href={SOCIAL_LINKS.linktree} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" title="Linktree">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.973.89 1.703 1.864 1.703h4.527c.974 0 1.784-.73 1.864-1.703 0-.162 0-.323-.08-.486l-3.134-5.49 3.134-5.49c.08-.162.08-.323.08-.486C16.048 2.627 15.238 1.897 14.264 1.897H9.737c-.974 0-1.784.73-1.864 1.703 0 .163 0 .324.08.486l3.134 5.49-3.134 5.49zm4.047-9.98l2.107 3.694H9.893l2.107-3.694zm0 7.387l-2.107 3.694h4.214l-2.107-3.694zM12 22.5c5.799 0 10.5-4.701 10.5-10.5S17.799 1.5 12 1.5 1.5 6.201 1.5 12 6.201 22.5 12 22.5z"/></svg>
+                </a>
+                <a href={SOCIAL_LINKS.venmo} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" title="Venmo">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.014 1.989c.484.803.701 1.63.701 2.674 0 3.328-2.84 7.657-5.147 10.697H9.455L7.2 2.916l4.7-.451 1.148 9.157c1.073-1.748 2.395-4.489 2.395-6.358 0-1.022-.175-1.72-.452-2.29l4.023-.985z"/></svg>
+                </a>
+                <a href={SOCIAL_LINKS.google} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" title="Google Business">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+                </a>
+              </div>
+              <div className="flex gap-6">
                 <a href="tel:406-451-1394" className="hover:text-accent transition-colors">406-451-1394</a>
                 <a href="tel:816-645-7054" className="hover:text-accent transition-colors">816-645-7054</a>
               </div>
@@ -387,8 +413,28 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="border-t border-accent/20 mt-8 pt-6 text-center text-xs text-muted-foreground tracking-widest uppercase">
-            © {new Date().getFullYear()} Headwaters Customs LLC. All rights reserved.
+          {/* Social Links in Footer */}
+          <div className="border-t border-accent/20 mt-8 pt-6 flex flex-col items-center gap-4">
+            <div className="flex items-center gap-5">
+              <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors" title="Facebook">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors" title="Instagram">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <a href={SOCIAL_LINKS.linktree} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors" title="Linktree">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M7.953 15.066c-.08.163-.08.324-.08.486.08.973.89 1.703 1.864 1.703h4.527c.974 0 1.784-.73 1.864-1.703 0-.162 0-.323-.08-.486l-3.134-5.49 3.134-5.49c.08-.162.08-.323.08-.486C16.048 2.627 15.238 1.897 14.264 1.897H9.737c-.974 0-1.784.73-1.864 1.703 0 .163 0 .324.08.486l3.134 5.49-3.134 5.49zm4.047-9.98l2.107 3.694H9.893l2.107-3.694zm0 7.387l-2.107 3.694h4.214l-2.107-3.694zM12 22.5c5.799 0 10.5-4.701 10.5-10.5S17.799 1.5 12 1.5 1.5 6.201 1.5 12 6.201 22.5 12 22.5z"/></svg>
+              </a>
+              <a href={SOCIAL_LINKS.venmo} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors" title="Venmo">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.014 1.989c.484.803.701 1.63.701 2.674 0 3.328-2.84 7.657-5.147 10.697H9.455L7.2 2.916l4.7-.451 1.148 9.157c1.073-1.748 2.395-4.489 2.395-6.358 0-1.022-.175-1.72-.452-2.29l4.023-.985z"/></svg>
+              </a>
+              <a href={SOCIAL_LINKS.google} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors" title="Google Business">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
+              </a>
+            </div>
+            <p className="text-xs text-muted-foreground tracking-widest uppercase">
+              © {new Date().getFullYear()} Headwaters Customs LLC. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
