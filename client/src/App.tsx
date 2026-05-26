@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import SplashScreen from "./components/SplashScreen";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
@@ -17,9 +18,9 @@ import BuildScout from "./pages/BuildScout";
 import BuildC20 from "./pages/BuildC20";
 import BuildK10 from "./pages/BuildK10";
 import BuildF6 from "./pages/BuildF6";
+import { useState } from "react";
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
@@ -36,26 +37,28 @@ function Router() {
       <Route path="/builds/k10" component={BuildK10} />
       <Route path="/builds/f6" component={BuildF6} />
       <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
+  // Show splash only once per session
+  const [showSplash, setShowSplash] = useState(() => {
+    return !sessionStorage.getItem("hwc_splash_seen");
+  });
+
+  const handleEnter = () => {
+    sessionStorage.setItem("hwc_splash_seen", "1");
+    setShowSplash(false);
+  };
+
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="dark"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
+          {showSplash && <SplashScreen onEnter={handleEnter} />}
           <Router />
         </TooltipProvider>
       </ThemeProvider>
