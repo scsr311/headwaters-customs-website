@@ -10,6 +10,7 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
   const [phase, setPhase] = useState<"loading" | "video" | "button" | "exiting">("loading");
   const [buttonVisible, setButtonVisible] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
+  const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -32,14 +33,22 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
     };
 
     const handleCanPlay = () => {
+      setVideoReady(true);
+      startVideo();
+    };
+
+    const handleCanPlayThrough = () => {
+      setVideoReady(true);
       startVideo();
     };
 
     // If video already has enough data, start immediately
     if (video.readyState >= 3) {
+      setVideoReady(true);
       startVideo();
     } else {
-      video.addEventListener("canplaythrough", handleCanPlay, { once: true });
+      video.addEventListener("canplay", handleCanPlay, { once: true });
+      video.addEventListener("canplaythrough", handleCanPlayThrough, { once: true });
     }
 
     video.addEventListener("ended", handleEnded);
@@ -51,7 +60,8 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
     }, 20000);
 
     return () => {
-      video.removeEventListener("canplaythrough", handleCanPlay);
+      video.removeEventListener("canplay", handleCanPlay);
+      video.removeEventListener("canplaythrough", handleCanPlayThrough);
       video.removeEventListener("ended", handleEnded);
       clearTimeout(fallback);
     };
@@ -70,7 +80,7 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
   const toggleMute = () => {
     const newMuted = !isMuted;
     setIsMuted(newMuted);
-    if (videoRef.current) videoRef.current.muted = newMuted;
+    // Video is always muted (no audio track) — only toggle the audio element
     if (audioRef.current) audioRef.current.muted = newMuted;
   };
 
@@ -90,9 +100,10 @@ export default function SplashScreen({ onEnter }: SplashScreenProps) {
         ref={videoRef}
         className="absolute inset-0 w-full h-full object-cover"
         src="/hwc_splash.mp4"
-        muted={isMuted}
+        muted
         playsInline
         preload="auto"
+        autoPlay
         style={{ opacity: phase === "loading" ? 0 : 1, transition: "opacity 0.5s ease" }}
       />
 
