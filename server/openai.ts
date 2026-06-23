@@ -1,12 +1,20 @@
-import { generateImage } from "./_core/imageGeneration";
-import { ENV } from "./_core/env";
-
 /**
- * Generate a vehicle image using the built-in Manus image generation service
+ * Generate a vehicle image using Pollinations.ai (free, no API key required)
+ * Reliable for automotive/vehicle imagery with good quality
  */
 export async function generateVehicleImage(prompt: string): Promise<string> {
-  const result = await generateImage({ prompt });
-  return result.url || "";
+  const encodedPrompt = encodeURIComponent(prompt);
+  // Use a unique seed based on timestamp for varied results
+  const seed = Date.now() % 999999;
+  const imageUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1024&height=1024&nologo=true&seed=${seed}&model=flux`;
+  
+  // Verify the image is accessible
+  const response = await fetch(imageUrl, { method: 'HEAD' });
+  if (!response.ok) {
+    throw new Error(`Image generation failed: ${response.status}`);
+  }
+  
+  return imageUrl;
 }
 
 /**
