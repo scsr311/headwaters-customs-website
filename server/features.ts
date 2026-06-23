@@ -54,22 +54,27 @@ export const dreamBuildRouter = router({
       const enhancedPrompt = `Professional automotive photography: ${input.prompt}. High quality, realistic, detailed, studio lighting, 4K resolution.`;
       
       try {
-        // Generate image using OpenAI
+        // Generate image
         const imageUrl = await generateVehicleImage(enhancedPrompt);
         
-        // Save to database
-        await createDreamBuild({
-          sessionId: input.sessionId,
-          ipAddress: ctx.req.ip,
-          userEmail: input.userEmail || null,
-          prompt: input.prompt,
-          generatedImages: JSON.stringify([imageUrl]),
-          renderCount: 1,
-        });
+        // Save to database (non-fatal — if DB is unavailable, still return the image)
+        try {
+          await createDreamBuild({
+            sessionId: input.sessionId,
+            ipAddress: ctx.req.ip,
+            userEmail: input.userEmail || null,
+            prompt: input.prompt,
+            generatedImages: JSON.stringify([imageUrl]),
+            renderCount: 1,
+          });
+        } catch (dbError) {
+          console.warn("Dream build DB write failed (non-fatal):", dbError);
+        }
         
+        const status = await getRateLimitStatus(identifier, "dream_build").catch(() => null);
         return {
           imageUrl,
-          remainingRenders: DREAM_BUILD_FREE_LIMIT - ((await getRateLimitStatus(identifier, "dream_build"))?.requestCount || 0),
+          remainingRenders: DREAM_BUILD_FREE_LIMIT - (status?.requestCount || 0),
         };
       } catch (error) {
         console.error("Dream build generation error:", error);
