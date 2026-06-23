@@ -6,14 +6,9 @@ export async function generateVehicleImage(prompt: string): Promise<string> {
   const encodedPrompt = encodeURIComponent(prompt);
   // Use a unique seed based on timestamp for varied results
   const seed = Date.now() % 999999;
+  // Pollinations.ai: free, no API key, generates on GET request
+  // The URL itself IS the image - browser loads it directly
   const imageUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1024&height=1024&nologo=true&seed=${seed}&model=flux`;
-  
-  // Verify the image is accessible
-  const response = await fetch(imageUrl, { method: 'HEAD' });
-  if (!response.ok) {
-    throw new Error(`Image generation failed: ${response.status}`);
-  }
-  
   return imageUrl;
 }
 
