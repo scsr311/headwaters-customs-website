@@ -1,31 +1,12 @@
+import { generateImage } from "./_core/imageGeneration";
 import { ENV } from "./_core/env";
 
 /**
- * Generate an image using OpenAI's DALL-E 3 API
+ * Generate a vehicle image using the built-in Manus image generation service
  */
 export async function generateVehicleImage(prompt: string): Promise<string> {
-  const response = await fetch("https://api.openai.com/v1/images/generations", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${ENV.openAiApiKey}`,
-    },
-    body: JSON.stringify({
-      model: "dall-e-3",
-      prompt: prompt,
-      n: 1,
-      size: "1024x1024",
-      quality: "standard",
-    }),
-  });
-
-  if (!response.ok) {
-    const error = await response.json();
-    throw new Error(`OpenAI API error: ${error.error?.message || "Unknown error"}`);
-  }
-
-  const data = await response.json();
-  return data.data[0]?.url || "";
+  const result = await generateImage({ prompt });
+  return result.url || "";
 }
 
 /**
