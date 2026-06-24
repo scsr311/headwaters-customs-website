@@ -36,6 +36,7 @@ export const dreamBuilds = mysqlTable("dream_builds", {
   prompt: text("prompt").notNull(),
   generatedImages: text("generatedImages").notNull(), // JSON array of image URLs
   renderCount: int("renderCount").default(1).notNull(),
+  isPublic: boolean("isPublic").default(true).notNull(), // Show in public gallery
   createdAt: timestamp("createdAt").defaultNow().notNull(),
 });
 

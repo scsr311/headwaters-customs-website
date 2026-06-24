@@ -1,4 +1,4 @@
-import { eq, and, gte } from "drizzle-orm";
+import { eq, and, gte, desc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import { 
   InsertUser, users, dreamBuilds, InsertDreamBuild, 
@@ -109,6 +109,37 @@ export async function getDreamBuildsBySession(sessionId: string) {
     .where(eq(dreamBuilds.sessionId, sessionId));
   
   return result;
+}
+
+export async function getPublicDreamBuilds(limit = 50) {
+  const db = await getDb();
+  if (!db) return [];
+  
+  const result = await db.select().from(dreamBuilds)
+    .where(eq(dreamBuilds.isPublic, true))
+    .orderBy(desc(dreamBuilds.createdAt))
+    .limit(limit);
+  
+  return result;
+}
+
+export async function getAllDreamBuildsAdmin() {
+  const db = await getDb();
+  if (!db) return [];
+  
+  const result = await db.select().from(dreamBuilds)
+    .orderBy(desc(dreamBuilds.createdAt));
+  
+  return result;
+}
+
+export async function toggleDreamBuildPublic(id: number, isPublic: boolean) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  
+  await db.update(dreamBuilds)
+    .set({ isPublic })
+    .where(eq(dreamBuilds.id, id));
 }
 
 // Quote Request Functions

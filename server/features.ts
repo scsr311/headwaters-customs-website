@@ -3,7 +3,10 @@ import { publicProcedure, router } from "./_core/trpc";
 import { generateVehicleImage, analyzeVehicleImages } from "./openai";
 import { 
   createDreamBuild, 
-  getDreamBuildsBySession, 
+  getDreamBuildsBySession,
+  getPublicDreamBuilds,
+  getAllDreamBuildsAdmin,
+  toggleDreamBuildPublic,
   createQuoteRequest,
   checkRateLimit,
   getRateLimitStatus 
@@ -109,6 +112,44 @@ export const dreamBuildRouter = router({
         remaining: DREAM_BUILD_FREE_LIMIT - (status?.requestCount || 0),
         resetAt: status?.resetAt || null,
       };
+    }),
+
+  // Public community gallery - all public renders
+  getGallery: publicProcedure
+    .input(z.object({ limit: z.number().optional() }))
+    .query(async ({ input }) => {
+      const builds = await getPublicDreamBuilds(input.limit || 50);
+      return builds.map(build => ({
+        id: build.id,
+        prompt: build.prompt,
+        imageUrl: JSON.parse(build.generatedImages)[0] || "",
+        createdAt: build.createdAt,
+      }));
+    }),
+
+  // Admin: get all renders with full metadata
+  adminGetAll: publicProcedure
+    .input(z.object({ adminPassword: z.string() }))
+    .query(async ({ input }) => {
+      if (input.adminPassword !== "Magoo311!") {
+        throw new TRPCError({ code: "UNAUTHORIZED", message: "Invalid admin password" });
+      }
+      const builds = await getAllDreamBuildsAdmin();
+      return builds.map(build => ({
+        ...build,
+        generatedImages: JSON.parse(build.generatedImages),
+      }));
+    }),
+
+  // Admin: toggle public visibility of a render
+  adminTogglePublic: publicProcedure
+    .input(z.object({ adminPassword: z.string(), id: z.number(), isPublic: z.boolean() }))
+    .mutation(async ({ input }) => {
+      if (input.adminPassword !== "Magoo311!") {
+        throw new TRPCError({ code: "UNAUTHORIZED", message: "Invalid admin password" });
+      }
+      await toggleDreamBuildPublic(input.id, input.isPublic);
+      return { success: true };
     }),
 });
 

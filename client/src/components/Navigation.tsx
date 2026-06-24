@@ -74,6 +74,11 @@ export default function Navigation() {
                       <span className="cursor-pointer text-sm uppercase tracking-wide font-semibold">Cost Calculator</span>
                     </Link>
                   </DropdownMenuItem>
+                  <DropdownMenuItem className="hover:text-accent focus:text-accent">
+                    <Link href="/dream-gallery">
+                      <span className="cursor-pointer text-sm uppercase tracking-wide font-semibold">Vision Board</span>
+                    </Link>
+                  </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
 
@@ -114,6 +119,9 @@ export default function Navigation() {
               </Link>
               <Link href="/dream-build" onClick={() => setMobileOpen(false)}>
                 <span className="block py-3 px-2 text-sm font-semibold uppercase tracking-wide text-foreground/90 hover:text-accent border-b border-border/30 transition-colors">AI Dream Build</span>
+              </Link>
+              <Link href="/dream-gallery" onClick={() => setMobileOpen(false)}>
+                <span className="block py-3 px-2 text-sm font-semibold uppercase tracking-wide text-foreground/90 hover:text-accent border-b border-border/30 transition-colors">Vision Board</span>
               </Link>
               <Link href="/quote" onClick={() => setMobileOpen(false)}>
                 <span className="block py-3 px-2 text-sm font-semibold uppercase tracking-wide text-foreground/90 hover:text-accent border-b border-border/30 transition-colors">Cost Calculator</span>

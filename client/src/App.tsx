@@ -18,6 +18,8 @@ import BuildScout from "./pages/BuildScout";
 import BuildC20 from "./pages/BuildC20";
 import BuildK10 from "./pages/BuildK10";
 import BuildF6 from "./pages/BuildF6";
+import DreamGallery from "./pages/DreamGallery";
+import AdminRenders from "./pages/AdminRenders";
 import { useState } from "react";
 
 function Router() {
@@ -36,6 +38,8 @@ function Router() {
       <Route path="/builds/c20" component={BuildC20} />
       <Route path="/builds/k10" component={BuildK10} />
       <Route path="/builds/f6" component={BuildF6} />
+      <Route path="/dream-gallery" component={DreamGallery} />
+      <Route path="/admin/renders" component={AdminRenders} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>
